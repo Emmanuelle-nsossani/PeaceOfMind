@@ -1,0 +1,63 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    background-color: rgba(9, 180, 223, 0.658);
+    padding-left: 50px;
+    font-size: 48px;
+    width: 100vw;
+    height: 100%;
+}
+.footer-haut{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: solid 3px blue;
+    margin-bottom: 100px;
+}
+.reseau {
+    display: flex;
+    justify-content: space-around;
+    border: solid 5px;
+    width: 960px;
+    height: 206;
+}
+.reseau .element:nth-child(1) {
+    background-image: url('IMG/tiktok.webp');
+    background-size: cover; /* Assure que l'image couvre entièrement l'élément */
+    width: 164px; /* Ajuste la taille de l'élément selon tes besoins */
+    height: 164px; /* Ajuste la taille de l'élément selon tes besoins */
+}
+.reseau .element:nth-child(2) {
+    background-image: url('IMG/instagram.webp');
+    background-size: cover; /* Assure que l'image couvre entièrement l'élément */
+    width: 164px; /* Ajuste la taille de l'élément selon tes besoins */
+    height: 164px; /* Ajuste la taille de l'élément selon tes besoins */
+}
+.reseau .element:nth-child(3) {
+    background-image: url('IMG/linkedin.png');
+    background-size: cover; /* Assure que l'image couvre entièrement l'élément */
+    width: 164px; /* Ajuste la taille de l'élément selon tes besoins */
+    height: 164px; /*Ajuste la taille de l'élément selon tes besoins */
+}
+.reseau .element:nth-child(4) {
+    background-image: url('IMG/Youtube.png');
+    background-size: cover; /* Assure que l'image couvre entièrement l'élément */
+    width: 235px; /* Ajuste la taille de l'élément selon tes besoins */
+    height: 164px; /* Ajuste la taille de l'élément selon tes besoins */
+}
+.footer-milieu{
+    display: flex;
+    border: solid 3px rgb(229, 255, 0);
+    margin-bottom: 40px;
+}
+.footer-bas{
+    border: solid 3px rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-haut div{
+    border: solid 2px green;
+}
