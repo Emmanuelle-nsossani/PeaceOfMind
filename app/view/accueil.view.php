@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <link rel="stylesheet" href="public\css\accueil.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POM - Peace of mind</title>
-</head>
-
-<body>
-    
     <main>
         <section id="banniere">
             <div id="container-slogan">
-                <p>Notre slogan</p>
+                <p>L'espoir d'un nouveau départ</p>
             </div>
         </section>
         <section>
-            <h1>Notre h1</h1>
+            <h1>Peace of Mind</h1>
             <div id="sante-mentale">
                 <p id="">Ma santé mentale</p>
                 <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
