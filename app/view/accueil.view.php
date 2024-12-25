@@ -1,6 +1,4 @@
-accueil view
-
-    <main>
+<main>
         <section id="banniere">
             <div id="container-slogan">
                 <p>L'espoir d'un nouveau départ</p>
