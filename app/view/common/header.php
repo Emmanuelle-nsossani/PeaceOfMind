@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <?php if (!empty($css)): ?>
-        <link rel="stylesheet" href="public/css/<?= $css ?>">
+        <link rel="stylesheet" href="http://localhost/sae302/public/css/accueil.css">
     <?php endif ?>
 
     <title><?= $page_title ?></title>
