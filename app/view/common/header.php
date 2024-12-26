@@ -20,7 +20,7 @@
         <ul>
             <li id="logo">
                 <a href="">
-                    <img src="public\images\logo\logo.png" alt="" srcset="">
+                    <img src="public\images\logo.png" alt="" srcset="">
                 </a>
                 <a href="">
                     Peace Of Mind

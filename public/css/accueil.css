@@ -44,9 +44,10 @@ body {
 
 header {
     top: 0;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     color: white;
-    background-color: var(--bleu-fonce);
+    background-color: var(--bleu);
     font-family: var(--font-main);
     font-size: 18px;
     font-weight: 600;
@@ -115,10 +116,16 @@ header #logo a:hover:after {
 /* PAGE ACCUEIL */
 
 main {
-    margin: 0 var(--margin-cote);
+    margin: 74px 0;
+}
+
+#banniere {
+    margin: 0;
+    background-color: var(--bleu);
 }
 
 #container-slogan {
+    background-image: url(public/images/);
     padding: 70px 0;
     font-family: var(--font-title);
     font-size: 50px;
@@ -169,7 +176,7 @@ h4 {
 }
 
 .button {
-    width: 50%;
+    width: 30%;
     line-height: 1;
     text-decoration: none;
     display: inline-flex;
@@ -203,7 +210,7 @@ h4 {
   }
   
   .button:hover {
-    background-color: #000;
+    background-color: var(--jaune);
   }
   
   .button:hover .button__icon-wrapper {

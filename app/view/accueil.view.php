@@ -39,10 +39,10 @@
                 </button>
 
             </div>
-            <img src="public\images\logo\quiz.png" alt="">
+            <img src="public\images\quiz.png" alt="">
         </div>
-        <div id="button">Je me renseigne</div>
-        <div id="button">J'ai besoin d'aide</div>
+        <button>Je me renseigne</button>
+        <button>J'ai besoin d'aide</button>
     </section>
     <section>
         <h2>La santé Mentale</h2>
