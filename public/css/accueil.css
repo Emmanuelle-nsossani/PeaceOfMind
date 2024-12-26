@@ -114,6 +114,10 @@ header #logo a:hover:after {
 
 /* PAGE ACCUEIL */
 
+main {
+    margin: 0 var(--margin-cote);
+}
+
 #container-slogan {
     padding: 70px 0;
     font-family: var(--font-title);
@@ -132,5 +136,92 @@ h1 {
 }
 
 #sante-mentale {
-    margin: 0 var(--margin-cote);
+    padding: 22px;
+    background-color: var(--bleu-fonce);
+    border-radius: 20px;
+    color: white;
 }
+
+h4 {
+    font-family: var(--font-main);
+    font-size: 20px;
+}
+
+#sante-mentale {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 70% 30%;
+}
+
+#sante-mentale div {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#sante-mentale img {
+    width: 70%;
+}
+
+#sante-mentale p {
+    font-family: var(--font-main);
+}
+
+.button {
+    width: 50%;
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: white;
+    color: var(--bleu-fonce);
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: white;
+    background-color: var(--bleu-fonce);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: #000;
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #000;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+  }
+  
