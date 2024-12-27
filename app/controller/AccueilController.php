@@ -22,7 +22,7 @@ class AccueilController extends Controller
             'page_title' => 'Accueil',
             'css' => 'accueil.css',
             'fontAwesome' => true,
-            'scripts' => ['acceuil.js'],
+            'scripts' => ['accueil.js','header-mobile.js'],
             'view' => 'app/view/accueil.view.php',
             'layout' => 'app/view/common/layout.php',
         ];
