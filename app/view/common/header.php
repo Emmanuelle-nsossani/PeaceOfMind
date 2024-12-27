@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header id="menu-desktop">
+    <header id="header-desktop">
         <ul>
             <li id="logo">
                 <a href="">
@@ -35,25 +35,19 @@
             <li><a href="#">Qui sommes nous</a></li>
         </ul>
     </header>
-    <header id="menu-mobile">
-        <div>
-            <img src="public\images\logo.png" alt="Logo Peace of Mind">
+    <header id="header-mobile">
+        <div id="logo-container">
+            <img id="logo-header" src="public\images\logo.png" alt="Logo Peace of Mind">
         </div>
-        <div>
-            <img src="public\images\login-icon.svg" alt="">
-            <div class="menu-bg"></div>
-            <div class="menu-burger">☰</div>
-            <div class="menu-items">
-                <div>CALL</div>
-                <div>DRIVE</div>
-                <div>MAIL</div>
-            </div>
-
-            <div class="content">
-                <h1>Circular Hamburger menu</h1>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                <br />
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-            </div>
+        <div id="menu-container">
+            <img id="login-icon" src="public\images\login-icon.svg" alt="">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" id="menuCheckbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
     </header>
