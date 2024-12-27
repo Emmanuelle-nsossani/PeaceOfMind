@@ -1,11 +1,9 @@
 <main>
     <section id="banniere">
-        <div id="container-slogan">
-            <p>L'espoir d'un nouveau départ</p>
-        </div>
+        <img src="public\images\titre noir POM.png" alt="">
+        <p>L'espoir d'un nouveau départ</p>
     </section>
     <section>
-        <h1>Peace of Mind</h1>
         <div id="sante-mentale">
             <div>
                 <h4>Ma santé mentale</h4>

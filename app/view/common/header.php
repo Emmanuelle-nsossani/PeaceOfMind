@@ -41,13 +41,12 @@
         </div>
         <div id="menu-container">
             <img id="login-icon" src="public\images\login-icon.svg" alt="">
-            <nav role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox" id="menuCheckbox" />
+            <div id="menuToggle">
+                <div id="span">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-            </nav>
+            </div>
         </div>
     </header>
