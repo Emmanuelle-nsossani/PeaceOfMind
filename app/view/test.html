@@ -1,0 +1,124 @@
+Test
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évaluation Santé Mentale</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        canvas {
+            max-width: 600px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Évaluation de votre Santé Mentale</h1>
+    <form id="mentalHealthForm">
+        <!-- État émotionnel -->
+        <div class="question">
+            <label>1. Ces derniers jours, vous êtes-vous senti(e) dépassé(e) par vos émotions ?</label>
+            <input type="number" name="q1" min="1" max="5" required>
+        </div>
+        <div class="question">
+            <label>2. Vous est-il arrivé de vous sentir triste ou déprimé(e) sans raison apparente ?</label>
+            <input type="number" name="q2" min="1" max="5" required>
+        </div>
+        <!-- Stress et anxiété -->
+        <div class="question">
+            <label>3. Vous sentez-vous souvent tendu(e) ou nerveux(se) ?</label>
+            <input type="number" name="q3" min="1" max="5" required>
+        </div>
+        <div class="question">
+            <label>4. Vous arrive-t-il de ressentir une peur ou une inquiétude excessive à propos de l’avenir ?</label>
+            <input type="number" name="q4" min="1" max="5" required>
+        </div>
+        <!-- Sommeil -->
+        <div class="question">
+            <label>5. Ces derniers temps, avez-vous des difficultés à vous endormir ou à rester endormi(e) ?</label>
+            <input type="number" name="q5" min="1" max="5" required>
+        </div>
+        <!-- Énergie et motivation -->
+        <div class="question">
+            <label>6. Vous sentez-vous souvent fatigué(e) ou sans énergie au cours de la journée ?</label>
+            <input type="number" name="q6" min="1" max="5" required>
+        </div>
+        <button type="button" onclick="calculateResults()">Voir les résultats</button>
+    </form>
+
+    <canvas id="resultsChart"></canvas>
+
+    <script>
+        function calculateResults() {
+            const form = document.getElementById('mentalHealthForm');
+            const formData = new FormData(form);
+
+            // Retrieve answers
+            const scores = [];
+            for (let [key, value] of formData.entries()) {
+                scores.push(parseInt(value));
+            }
+
+            // Calculate total and averages per section (if applicable)
+            const totalScore = scores.reduce((a, b) => a + b, 0);
+            const labels = [
+                'État émotionnel', 
+                'Stress et anxiété', 
+                'Sommeil', 
+                'Énergie et motivation'
+            ];
+
+            // Display chart
+            const ctx = document.getElementById('resultsChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Score par catégorie',
+                        data: scores,
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 5
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+

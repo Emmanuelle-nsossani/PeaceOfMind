@@ -348,19 +348,13 @@ h4 {
     }
 
     #sante-mentale img {
+        float: right;
         width: 80px;
         height: 80px;
-    }
-
-    #sante-mentale-text {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 1%;
+        margin: 10px;
     }
 
     #sante-mentale p {
-        width: 73%;
         text-align: justify;
     }
 
@@ -383,7 +377,8 @@ h4 {
         overflow: hidden;
         text-overflow: ellipsis;
         transition: background-color 0.3s;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    }
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
 
     .button__icon-wrapper {
         flex-shrink: 0;
@@ -431,7 +426,7 @@ h4 {
         width: 45%;
         justify-content: space-evenly;
         color: black;
-        
+
     }
 
     #button-container img {
@@ -446,4 +441,63 @@ h4 {
         background-color: var(--bleu);
     }
 
+    /* LE SAVIEZ VOUS SECTION */
+
+    #saviez-vous {
+        margin-top: 30px;
+    }
+
+    #saviez-vous p {
+        text-align: justify;
+    }
+
+    #saviez-vous-text {
+        margin: 0 30px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    #saviez-vous-text img {
+        margin: 10px;
+        width: 140px;
+        float: right;
+    }
+
+    #saviez-vous-text h4 {
+        margin-top: 10px;
+    }
+
+    /* CARTE */
+
+    .carte-container {
+        display: flex;
+        margin: 20px;
+        gap: 10px;
+        transform-style: preserve-3d;
+        transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+      }
+
+      .carte {
+        width: 190px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        border-radius: 20px;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #47525D;
+      }
+
+      .recto {
+        transform: rotateY(180deg);
+      }
+      
+      .flipped {
+        transform: rotateY(180deg);
+      }
 }

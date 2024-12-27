@@ -7,9 +7,9 @@
         <div id="sante-mentale">
             <h4>Allez-vous bien mentalement ?</h4>
             <div id="sante-mentale-text">
+                <img src="public\images\sante-mentale-illus.png" alt="">
                 <p>Nous vous proposons un test conçu pour évaluer votre niveau de santé mentale, il vous aidera à mieux comprendre votre état émotionnel et psychologique. En un instant, obtenez un résultat chiffré et détaillé. Pour en savoir plus évaluez votre mental en 2min.</p>
                 <!-- button from Uiverse.io by Creatlydev -->
-                <img src="public\images\sante-mentale-illus.png" alt="">
             </div>
             <button href="#" class="button">
                 <span class="button__icon-wrapper">
@@ -50,11 +50,29 @@
             </button>
         </div>
     </section>
+    <section id="saviez-vous">
+        <div id="saviez-vous-text">
+            <img src="public\images\play-illus.svg" alt="la-saviez-vous">
+            <p><span class="bold">Débarrassons nous de nous des préjugés
+                    sur la santé mentale !</span> Il est important de
+                promouvoir une vision plus réaliste et bienveillante
+                de la santé mentale. <span class="bold"> Dans ce jeu de cartes, répondez à des questions qui vous permettront de réfléchir à votre perception sur la santé mentale !</span>
+            </p>
+
+            <h4>Alors le saviez-vous...</h4>
+        </div>
+        <div id="cartes-container">
+            <div class="carte-container">
+                <img class="carte recto" src="public\images\carte-verso.svg" alt="">
+                <img class="carte verso" src="public\images\carte-recto.svg" alt="">
+            </div>
+        </div>
+    </section>
     <section>
         <h2>La santé Mentale</h2>
         <p>Le saviez vous</p>
         <div id="container-carte">
-            <div class="carte">
+            <div class="">
                 <img src="" alt="" class="picto-lampe">
                 <p>Question</p>
                 <p>La santé mentale ne concerne que le lorem impsum ?</p>
