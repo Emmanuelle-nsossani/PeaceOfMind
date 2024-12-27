@@ -9,9 +9,7 @@
             <div id="sante-mentale-text">
                 <p>Nous vous proposons un test conçu pour évaluer votre niveau de santé mentale, il vous aidera à mieux comprendre votre état émotionnel et psychologique. En un instant, obtenez un résultat chiffré et détaillé. Pour en savoir plus évaluez votre mental en 2min.</p>
                 <!-- button from Uiverse.io by Creatlydev -->
-                <div id="container-img-sante">
-                    <img src="public\images\sante-mentale-illus.png" alt="">
-                </div>
+                <img src="public\images\sante-mentale-illus.png" alt="">
             </div>
             <button href="#" class="button">
                 <span class="button__icon-wrapper">
@@ -41,8 +39,16 @@
             </button>
 
         </div>
-        <button>Je me renseigne</button>
-        <button>J'ai besoin d'aide</button>
+        <div id="button-container">
+            <button class="button">
+                <img src="public\images\souris.png" alt="souris">
+                Je me renseigne
+            </button>
+            <button class="button">
+                <img src="public\images\tel.png" alt="tel">
+                Je veux en parler
+            </button>
+        </div>
     </section>
     <section>
         <h2>La santé Mentale</h2>

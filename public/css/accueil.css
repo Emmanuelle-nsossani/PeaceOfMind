@@ -335,26 +335,115 @@ h4 {
     }
 
     #sante-mentale {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
         margin: 20px 30px;
         padding: 20px;
         background-color: var(--rose);
         border-radius: 40px;
-        box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.20) inset;  
+        box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.20) inset;
     }
 
-    #container-img-sante {
-        
-        background-color: #F9AFBE;
-        width: 72px;
-        height: 72px;
+    #sante-mentale img {
+        width: 80px;
+        height: 80px;
     }
 
     #sante-mentale-text {
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1%;
     }
 
     #sante-mentale p {
+        width: 73%;
         text-align: justify;
+    }
+
+    .button {
+        width: 80%;
+        line-height: 1;
+        text-decoration: none;
+        display: inline-flex;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+        gap: 0.75rem;
+        background-color: white;
+        color: var(--bleu-fonce);
+        border-radius: 10rem;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        padding-left: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: background-color 0.3s;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    }
+
+    .button__icon-wrapper {
+        flex-shrink: 0;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        color: white;
+        background-color: var(--bleu-fonce);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+
+    .button:hover {
+        background-color: var(--jaune);
+    }
+
+    .button:hover .button__icon-wrapper {
+        color: white;
+    }
+
+    .button__icon-svg--copy {
+        position: absolute;
+        transform: translate(-150%, 150%);
+    }
+
+    .button:hover .button__icon-svg:first-child {
+        transition: transform 0.3s ease-in-out;
+        transform: translate(150%, -150%);
+    }
+
+    .button:hover .button__icon-svg--copy {
+        transition: transform 0.3s ease-in-out 0.1s;
+        transform: translate(0);
+    }
+
+    #button-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 30px;
+    }
+
+    #button-container button {
+        width: 45%;
+        justify-content: space-evenly;
+        color: black;
+        
+    }
+
+    #button-container img {
+        width: 13px;
+    }
+
+    #button-container button:nth-child(1) {
+        background-color: var(--jaune);
+    }
+
+    #button-container button:nth-child(2) {
+        background-color: var(--bleu);
     }
 
 }
