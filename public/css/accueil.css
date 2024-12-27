@@ -7,7 +7,7 @@
 
 :root {
     --jaune: #FFC212;
-    --rose: #FAAFBD;
+    --rose: #FECCD8;
     --bleu: #98D2F5;
     --bleu-fonce: #30408C;
     --margin-cote: 200px;
@@ -325,6 +325,36 @@ h4 {
     p {
         font-size: 16px;
         font-family: var(--font-main);
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: var(--font-main);
+    }
+
+    #sante-mentale {
+        margin: 20px 30px;
+        padding: 20px;
+        background-color: var(--rose);
+        border-radius: 40px;
+        box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.20) inset;  
+    }
+
+    #container-img-sante {
+        
+        background-color: #F9AFBE;
+        width: 72px;
+        height: 72px;
+    }
+
+    #sante-mentale-text {
+        display: flex;
+    }
+
+    #sante-mentale p {
+        text-align: justify;
     }
 
 }

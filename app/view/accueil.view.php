@@ -5,39 +5,41 @@
     </section>
     <section>
         <div id="sante-mentale">
-            <div>
-                <h4>Ma santé mentale</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <h4>Allez-vous bien mentalement ?</h4>
+            <div id="sante-mentale-text">
+                <p>Nous vous proposons un test conçu pour évaluer votre niveau de santé mentale, il vous aidera à mieux comprendre votre état émotionnel et psychologique. En un instant, obtenez un résultat chiffré et détaillé. Pour en savoir plus évaluez votre mental en 2min.</p>
                 <!-- button from Uiverse.io by Creatlydev -->
-                <button href="#" class="button">
-                    <span class="button__icon-wrapper">
-                        <svg
-                            viewBox="0 0 14 15"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="button__icon-svg"
-                            width="10">
-                            <path
-                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                fill="currentColor"></path>
-                        </svg>
-
-                        <svg
-                            viewBox="0 0 14 15"
-                            fill="none"
-                            width="10"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="button__icon-svg button__icon-svg--copy">
-                            <path
-                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </span>
-                    Faire le test
-                </button>
-
+                <div id="container-img-sante">
+                    <img src="public\images\sante-mentale-illus.png" alt="">
+                </div>
             </div>
-            <img src="public\images\quiz.png" alt="">
+            <button href="#" class="button">
+                <span class="button__icon-wrapper">
+                    <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10">
+                        <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"></path>
+                    </svg>
+
+                    <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy">
+                        <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"></path>
+                    </svg>
+                </span>
+                Passer le test maintenant !
+            </button>
+
         </div>
         <button>Je me renseigne</button>
         <button>J'ai besoin d'aide</button>
