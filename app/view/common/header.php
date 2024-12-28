@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="public/js/header-mobile.js"></script>
+    <link rel="icon" href="favicon.ico" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,18 +36,29 @@
             <li><a href="#">Qui sommes nous</a></li>
         </ul>
     </header>
-    <header id="header-mobile">
-        <div class="logo-container">
-            <img class="logo-header" src="public\images\logo.png" alt="Logo Peace of Mind">
-        </div>
-        <div id="menu-container">
-            <img id="login-icon" src="public\images\login-icon.svg" alt="">
-            <div id="menuToggle">
-                <div id="span">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <header id="header-mobile-container">
+        <div id="header-mobile">
+            <div class="logo-container">
+                <img class="logo-header" src="public\images\logo.png" alt="Logo Peace of Mind">
+            </div>
+            <div id="menu-container">
+                <img id="login-icon" src="public\images\login-icon.svg" alt="">
+                <div id="menuToggle">
+                    <div id="span">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- <nav>
+            <ul>
+                <li><a href="#">J'ai besoin d'aide</a></li>
+                <li><a href="#">Intéragir avec nous</a></li>
+                <li><a href="#">Foire aux questions</a></li>
+                <li><a href="#">Qui sommes nous ?</a></li>
+            </ul>
+        </nav> -->
+
     </header>
