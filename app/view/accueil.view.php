@@ -65,7 +65,6 @@
             <div class="carte-container">
                 <div class="carte recto">
                     <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
-                    <p>La santé mentale ne concerne que le lorem ipsum ?</p>
                 </div>
                 <div class="carte verso">
                     <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
@@ -89,34 +88,35 @@
             </div>
         </div>
     </section>
-    <section>
-        <h2>La santé Mentale</h2>
-        <p>Le saviez vous</p>
-        <div id="container-carte">
-            <div class="">
-                <img src="" alt="" class="picto-lampe">
-                <p>Question</p>
-                <p< /p>
-            </div>
-            <p>La santé mentale ne concerne que le lorem ipsum ?</p>
+    <section id="blog-section">
+        <h4>Notre blog présent pour vous</h4>
+        <div id="p-blog">
+            <img src="public\images\message-icon.svg" alt="message-icon">
+            <p>Des articles sur la santé mentale</p>
         </div>
-    </section>
-    <section>
-        <h2>Notre blog présent pour vous</h2>
-        <p>Des articles sur la santé mentale</p>
         <div class="article-container">
-            <div id="article">
+            <div id="last-article">
                 <p>Notre dernier article</p>
-                <img src="" alt="">
-                <p class="date-article">OO/OO/OO</p>
-                <h2>H2</h2>
-                <p>Châpo de l'article</p>
-                <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <a href="">Lire la suite</a></p>
+            </div>
+            <div id="container-img-art">
+                <img src="public\images\last-article.png" alt="illustration santé mentale">
+                <p id="date-article">20/12/24</p>
+            </div>
+            <div id="text-last-article">
+                <p>La santé mentale : <br> Qu'est-ce que c'est <br> et comment la présercer ?</p>
+                <p>Environ 20% de la population, soit 13 millions de Français, souffrent de troubles psychiques tels que la dépression et l'anxiété. Les jeunes adultes entre 18 et 25 ans sont particulièrement affectés, avec une augmentation notable des symptômes anxieux et dépressifs depuis 2020. Ces symptômes proviennent d’une mauvaise santé mentale. <br>
+
+                    La “Santé mentale” ? Quésaco ? <br>
+
+                    La santé mentale désigne la santé psychologique d’une personne, soit son bien être. Ce n’est pas quelque chose de figé, plutôt une évolution perpétuelle de notre cerveau, en recherche d’un équilibre psychique, en fonction de nos expériences ...</p>
+            </div>
+            <div id="button-article">
+                <button class="button">Lire la suite</button>
             </div>
         </div>
     </section>
     <section>
-        <h2>Le forum</h2>
+        <h4>Le forum</h4>
         <p>Un espace ou vous échangez ananymement</p>
         <div class="message">
             <p>Car vous n'êtes jamais le seul...</p>
@@ -129,17 +129,7 @@
         <h2>Vos témoignage</h2>
         <p>Ceux qui ont pût bénéficier de notre aide</p>
         <div id="container-temoignage">
-            <div></div>
-            <div>
-                <div id="personne">
-                    <p>Anonyme</p>
-                </div>
-                <div>
-                    <p>Principale aide: Les appels</p>
-                    <p>Placerat enim. Quisque sollicitudin. Praesent Nullam ultrices lacus vehicula, non leo. gravida In convallis. tempor Cras eu</p>
-                </div>
-            </div>
-            <div></div>
+
         </div>
     </section>
 </main>
