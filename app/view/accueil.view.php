@@ -63,8 +63,29 @@
         </div>
         <div id="cartes-container">
             <div class="carte-container">
-                <img class="carte recto" src="public\images\carte-verso.svg" alt="">
-                <img class="carte verso" src="public\images\carte-recto.svg" alt="">
+                <div class="carte recto">
+                    <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
+                    <p>La santé mentale ne concerne que le lorem ipsum ?</p>
+                </div>
+                <div class="carte verso">
+                    <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
+                </div>
+            </div>
+            <div class="carte-container">
+                <div class="carte recto">
+                    <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
+                </div>
+                <div class="carte verso">
+                    <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
+                </div>
+            </div>
+            <div class="carte-container">
+                <div class="carte recto">
+                    <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
+                </div>
+                <div class="carte verso">
+                    <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
+                </div>
             </div>
         </div>
     </section>
@@ -75,8 +96,9 @@
             <div class="">
                 <img src="" alt="" class="picto-lampe">
                 <p>Question</p>
-                <p>La santé mentale ne concerne que le lorem impsum ?</p>
+                <p< /p>
             </div>
+            <p>La santé mentale ne concerne que le lorem ipsum ?</p>
         </div>
     </section>
     <section>
