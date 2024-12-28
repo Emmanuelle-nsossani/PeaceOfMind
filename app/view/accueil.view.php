@@ -159,12 +159,3 @@
     </section>
 
 </main>
-<?php if (isset($scripts)) : ?>
-    <?php foreach ($scripts as $script) : ?>
-        <script src="public/js/<?= $script ?>"></script>
-    <?php endforeach ?>
-<?php endif ?>
-</body>
-
-
-</html>

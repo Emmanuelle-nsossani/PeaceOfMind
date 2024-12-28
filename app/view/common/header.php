@@ -36,8 +36,8 @@
         </ul>
     </header>
     <header id="header-mobile">
-        <div id="logo-container">
-            <img id="logo-header" src="public\images\logo.png" alt="Logo Peace of Mind">
+        <div class="logo-container">
+            <img class="logo-header" src="public\images\logo.png" alt="Logo Peace of Mind">
         </div>
         <div id="menu-container">
             <img id="login-icon" src="public\images\login-icon.svg" alt="">
