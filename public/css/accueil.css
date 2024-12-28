@@ -533,7 +533,7 @@ h4 {
     /* SECTION BLOG */
 
     #blog-section {
-        margin: 0 30px;
+        margin: 0 30px 30px 30px;
     }
 
     #container-img-art {
@@ -562,7 +562,7 @@ h4 {
         box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.305) inset;
     }
 
-    #p-blog {
+    .p-titre {
         display: flex;
         justify-content: center;
         gap: 10px;
@@ -585,15 +585,15 @@ h4 {
         overflow: hidden;
         margin: 0 10%;
         background-color: #000000;
-        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255, 0, 0, 0.115));
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.115));
         background-size: 100%;
         -webkit-background-clip: text;
         -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
+        -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
     }
 
-    #text-last-article p:nth-child(1){
+    #text-last-article p:nth-child(1) {
         margin-bottom: 10px;
         color: var(--bleu-fonce);
         font-size: 20px;
@@ -616,4 +616,42 @@ h4 {
         width: 100%;
         display: flex;
     }
+
+    #message {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    #message div {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        justify-items: center;
+        width: fit-content;
+    }
+
+    #message p {
+        margin-top: 3px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #message img {
+        grid-column: 1;
+        grid-row: 1
+    }
+
+    #forum-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px 30px 30px;
+    }
+
+    #message-jaune {
+        margin-left: 50%;
+        font-weight: bold;
+    }
+
 }

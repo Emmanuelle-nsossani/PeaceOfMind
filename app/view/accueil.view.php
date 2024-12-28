@@ -90,7 +90,7 @@
     </section>
     <section id="blog-section">
         <h4>Notre blog présent pour vous</h4>
-        <div id="p-blog">
+        <div class="p-titre">
             <img src="public\images\message-icon.svg" alt="message-icon">
             <p>Des articles sur la santé mentale</p>
         </div>
@@ -115,23 +115,33 @@
             </div>
         </div>
     </section>
-    <section>
-        <h4>Le forum</h4>
-        <p>Un espace ou vous échangez ananymement</p>
-        <div class="message">
-            <p>Car vous n'êtes jamais le seul...</p>
-        </div>
-        <div class="message">
-            <p>Je découvre le Forum</p>
-        </div>
-    </section>
-    <section>
-        <h2>Vos témoignage</h2>
-        <p>Ceux qui ont pût bénéficier de notre aide</p>
-        <div id="container-temoignage">
 
+    <section id="forum-section">
+        <h4>Le forum</h4>
+        <div class="p-titre">
+            <img src="public\images\masque-illus.svg" alt="forum-icon">
+            <p>Des articles sur la santé mentale</p>
+        </div>
+        <div id="message">
+            <div id="message-bleu">
+                <img src="public\images\message-bleu.svg" alt="bulle de message">
+                <p>...Car vous n'êtes jamais seul</p>
+            </div>
+            <div id="message-jaune">
+                <img src="public\images\message-jaune.svg" alt="bulle de message">
+                <p>Je découvre le Forum</p>
+            </div>
         </div>
     </section>
+
+    <section id="temoignage-section">
+        <h4>Vos témoignages</h4>
+        <div class="p-titre">
+            <img src="public\images\masque-illus.svg" alt="temoignage-icon">
+            <p>Ceux qui ont pu bénificier de notre aide</p>
+        </div>
+    </section>
+
 </main>
 <?php if (isset($scripts)) : ?>
     <?php foreach ($scripts as $script) : ?>
