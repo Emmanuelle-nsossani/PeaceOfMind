@@ -236,6 +236,11 @@ h4 {
 /* RESPONSIVE MOBILE */
 
 @media (max-width: 480px) {
+
+    body {
+        background-image: url(../images/mobile/main-bg.png);
+    }
+
     #header-desktop {
         display: none;
     }
@@ -617,6 +622,8 @@ h4 {
         display: flex;
     }
 
+    /* FORUM  */
+
     #message {
         margin-top: 20px;
         display: flex;
@@ -654,4 +661,44 @@ h4 {
         font-weight: bold;
     }
 
+    /* TEMOINGNAGES */
+
+    #temoignage-section .p-titre img {
+        width: 18px;
+    }
+
+    #temoignage-section {
+        margin: 0 30px;
+    }
+
+    #temoignages-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #text-temoignage {
+        border: 1px solid var(--bleu);
+        padding: 40px 20px 20px 20px;
+        border-radius: 40px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    #identite {
+        width: fit-content;
+        padding: 5px 10px;
+        background-color: var(--bleu);
+        display: flex;
+        border-radius: 40px;
+        top: 30px;
+        position: relative;
+    }
+
+    #identite img {
+        width: 20px;
+    }
+
+    #soutien-img {
+        margin-top: 40px;
+    }
 }

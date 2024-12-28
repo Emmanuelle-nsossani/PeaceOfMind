@@ -137,9 +137,25 @@
     <section id="temoignage-section">
         <h4>Vos témoignages</h4>
         <div class="p-titre">
-            <img src="public\images\masque-illus.svg" alt="temoignage-icon">
+            <img src="public\images\bulle-illus.png" alt="temoignage-icon">
             <p>Ceux qui ont pu bénificier de notre aide</p>
         </div>
+        <div id="temoignages-container">
+                <div class="bold"><</div>
+                <div id="temoignage-container">
+                    <div id="identite">
+                        <img src="public\images\malika.png" alt="Malika">
+                        <p>Malika</p>
+                    </div>
+                    <div id="text-temoignage">
+                        <p>Du burn out à bénévole chez POM</p>
+                        <p>Du burn-out à bénévole chez Peace of Mind Témoignage de Malika, étudiante en médecine qui n’avait plus espoir en la vie. J’ai sombré dans un cercle vicieux de stress, d’auto-dévalorisation et d’ <a href="">Lire Plus</a></p>
+                    </div>
+                </div>
+                <div class="bold">></div>
+            </div>
+        </div>
+        <img id="soutien-img" src="public\images\soutien-illus.svg" alt="soutien illus">
     </section>
 
 </main>
