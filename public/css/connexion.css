@@ -457,6 +457,7 @@ body {
     }
 
     #bottom-form {
+        text-align: center;
         font-size: 14px;
         margin-top: 30px;
         margin-bottom: 20px;
@@ -472,7 +473,7 @@ body {
         font-size: 14px;
         font-weight: bold;
         font-family: var(--font-main);
-        text-decoration: solid;
+        text-decoration: underline;
         color: var(--bleu-fonce);
         opacity: 0.9;
     }

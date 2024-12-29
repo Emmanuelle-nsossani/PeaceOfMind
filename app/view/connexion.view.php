@@ -34,7 +34,7 @@
                 <button class="button">S'inscrire</button>
                 <div id="bottom-form">
                     <a href="">Mot de pass oublié ?</a>
-                    <p>J'ai déjà un compte, <span id="inscription-button">je m'inscrie</span>.</p>
+                    <p>J'ai déjà un compte, <br> <span id="inscription-button">je m'inscrie</span>.</p>
                 </div>
             </form>
         </div>

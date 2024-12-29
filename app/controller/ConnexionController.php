@@ -22,7 +22,7 @@ class ConnexionController extends Controller
             'page_title' => "J'ai besoin d'aide",
             'css' => 'connexion.css',
             'fontAwesome' => true,
-            'scripts' => ['carte.js'],
+            'scripts' => ['carte.js','connexion.js'],
             'view' => 'app/view/connexion.view.php',
             'layout' => 'app/view/common/layout.php',
         ];
