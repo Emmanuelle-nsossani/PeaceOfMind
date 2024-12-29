@@ -468,10 +468,11 @@ body {
         align-items: center;
     }
 
-    #bottom-form a {
+    #bottom-form span, #bottom-form a {
         font-size: 14px;
         font-weight: bold;
         font-family: var(--font-main);
+        text-decoration: solid;
         color: var(--bleu-fonce);
         opacity: 0.9;
     }
@@ -490,6 +491,10 @@ body {
 
     #form {
         margin: 0 30px 90px 30px;
+    }
+
+    .form-hidden {
+        display: none;
     }
 
 }

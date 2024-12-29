@@ -17,10 +17,10 @@
                 <button class="button">Se connecter</button>
                 <div id="bottom-form">
                     <a href="">Mot de pass oublié ?</a>
-                    <p>Pas de compte ? <a href="">S'inscrire</a></p>
+                    <p>Pas de compte ? <span id="connexion-button">S'inscrire</span></p>
                 </div>
             </form>
-            <form action="" id="form-inscription">
+            <form action="" id="form-inscription" class="form-hidden">
                 <div id="title">
                     <h2>Bienvenue</h2>
                     <p>Rejoignez nous :)</p>
@@ -34,7 +34,7 @@
                 <button class="button">S'inscrire</button>
                 <div id="bottom-form">
                     <a href="">Mot de pass oublié ?</a>
-                    <p>J'ai déjà un compte, <a href="">je m'inscrie</a>.</p>
+                    <p>J'ai déjà un compte, <span id="inscription-button">je m'inscrie</span>.</p>
                 </div>
             </form>
         </div>
