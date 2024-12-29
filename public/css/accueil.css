@@ -54,7 +54,7 @@ body {
     #header-desktop {
         display: none;
     }
-    
+
     #header-mobile {
         top: 0;
         left: 0;
@@ -78,7 +78,36 @@ body {
     #login-icon {
         width: 45px;
     }
-    
+
+    nav {
+        width: 100%;
+        position: absolute;
+    }
+
+    nav li {
+        border-bottom: 1px solid #30408c21;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        background-color: white;
+        
+    }
+
+    nav li:nth-child(4) {
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        -webkit-box-shadow: 0px 10px 13px -7px #2c2c2c, 0px 14px 36px -14px rgba(0, 0, 0, 0);
+        box-shadow: 0px 10px 13px -7px #2c2c2c, 0px 14px 36px -14px rgba(0, 0, 0, 0);
+    }
+
+    nav a {
+        color: black;
+        font-size: 18px;
+        font-family: var(--font-main);
+        text-decoration: none;
+    }
+
 
     /* FOOTER */
 

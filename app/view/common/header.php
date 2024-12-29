@@ -52,13 +52,13 @@
                 </div>
             </div>
         </div>
-        <!-- <nav>
+        <nav>
             <ul>
                 <li><a href="#">J'ai besoin d'aide</a></li>
                 <li><a href="#">Intéragir avec nous</a></li>
                 <li><a href="#">Foire aux questions</a></li>
                 <li><a href="#">Qui sommes nous ?</a></li>
             </ul>
-        </nav> -->
+        </nav>
 
     </header>
