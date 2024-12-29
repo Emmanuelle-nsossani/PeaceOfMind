@@ -292,11 +292,6 @@ body {
         font-family: var(--font-main);
     }
 
-    
-    header nav {
-        z-index: 10;
-    }
-
     h4 {
         text-align: center;
         font-size: 18px;

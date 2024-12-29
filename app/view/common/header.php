@@ -30,7 +30,7 @@
                     Peace Of Mind
                 </a>
             </li>
-            <li><a href="#">J'ai besoin d'aide</a></li>
+            <li><a href="index.php?page=besoin-aide">J'ai besoin d'aide</a></li>
             <li><a href="#">Se renseigner</a></li>
             <li><a href="#">Intéragir avec nous</a></li>
             <li><a href="#">Qui sommes nous</a></li>
@@ -53,8 +53,8 @@
             </div>
         </div>
         <nav role="navigation">
-            <ul id="menu">
-                <li><a href="#">
+            <ul id="menu" class="menu">
+                <li><a href="index.php?page=besoin-aide">
                         <label for="menuCheckbox" onclick="this.parentNode.click();">J'ai besoin d'aide</label>
                     </a></li>
                 <li><a href="#">

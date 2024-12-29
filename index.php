@@ -17,6 +17,10 @@ try {
             $accueilController = new app\controller\AccueilController();
             $accueilController->genererPageAccueil();
             break;
+        case 'besoin-aide':
+            $besoinAideController = new app\controller\BesoinAideController();
+            $besoinAideController->genererPageBesoinAide();
+            break;
         default:
             throw new Exception("Page inconnue : {$page}");
     }
