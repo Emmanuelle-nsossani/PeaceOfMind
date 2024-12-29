@@ -21,6 +21,10 @@ try {
             $besoinAideController = new app\controller\BesoinAideController();
             $besoinAideController->genererPageBesoinAide();
             break;
+        case 'connexion':
+            $besoinAideController = new app\controller\ConnexionController();
+            $besoinAideController->genererPageConnexion();
+            break;
         default:
             throw new Exception("Page inconnue : {$page}");
     }

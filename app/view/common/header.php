@@ -31,7 +31,7 @@
                 </a>
             </li>
             <li><a href="index.php?page=besoin-aide">J'ai besoin d'aide</a></li>
-            <li><a href="#">Se renseigner</a></li>
+            <li><a href="">Se renseigner</a></li>
             <li><a href="#">Intéragir avec nous</a></li>
             <li><a href="#">Qui sommes nous</a></li>
         </ul>
@@ -43,7 +43,8 @@
                 </a>
             </div>
             <div id="menu-container">
-                <img id="login-icon" src="public/images/login-icon.svg" alt="">
+                <a href="index.php?page=connexion"><img id="login-icon" src="public/images/login-icon.svg" alt="">
+                </a>
                 <div id="menuToggle">
                     <div id="span">
                         <span></span>

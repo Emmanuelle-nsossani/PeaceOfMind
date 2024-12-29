@@ -108,7 +108,7 @@ body {
         text-decoration: none;
     }
 
-
+    
     #menu-container {
         display: flex;
         width: 30%;
@@ -152,27 +152,25 @@ body {
     }
 
     .menu {
-        display: none;
+        display: none; 
     }
 
     #menuToggle.active #span span:nth-child(1) {
         transform: rotate(45deg);
         position: relative;
     }
-
+    
     #menuToggle.active #span span:nth-child(2) {
-        opacity: 0;
-        /* Cache la ligne du milieu */
+        opacity: 0; /* Cache la ligne du milieu */
     }
-
+    
     #menuToggle.active #span span:nth-child(3) {
         transform: rotate(-45deg);
         position: relative;
     }
-
-    #menuToggle.active+nav #menu {
-        display: block;
-        /* Affiche le menu quand le burger est activé */
+    
+    #menuToggle.active + nav #menu {
+        display: block; /* Affiche le menu quand le burger est activé */
     }
 
     .active #span {
@@ -671,4 +669,61 @@ body {
     header nav {
         z-index: 10;
     }
+    
+    #banniere {
+        padding: 5vw 0 22vw 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+        margin-top: -1px;
+        height: 43vw;
+        background-size: cover;
+        background-image: url(../images/mobile/slogan-bg.png);
+    }
+
+    #banniere img {
+        width: 252px;
+    }
+
+    #container-form {
+        width: 90%; 
+        margin: 0 auto;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Espacement entre les éléments */
+    }
+    
+    form label {
+        font-size: 14px; /* Taille de police pour les labels */
+    }
+    
+    form input {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    form button {
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: #0056b3;
+    }
+
+    #form {
+        margin: 0 30px;
+    }
+
 }
