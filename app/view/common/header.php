@@ -39,10 +39,10 @@
     <header id="header-mobile-container">
         <div id="header-mobile">
             <div class="logo-container">
-                <img class="logo-header" src="public\images\logo.png" alt="Logo Peace of Mind">
+                <img class="logo-header" src="public/images/logo.png" alt="Logo Peace of Mind">
             </div>
             <div id="menu-container">
-                <img id="login-icon" src="public\images\login-icon.svg" alt="">
+                <img id="login-icon" src="public/images/login-icon.svg" alt="">
                 <div id="menuToggle">
                     <div id="span">
                         <span></span>
@@ -52,13 +52,20 @@
                 </div>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">J'ai besoin d'aide</a></li>
-                <li><a href="#">Intéragir avec nous</a></li>
-                <li><a href="#">Foire aux questions</a></li>
-                <li><a href="#">Qui sommes nous ?</a></li>
+        <nav role="navigation">
+            <ul id="menu">
+                <li><a href="#">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">J'ai besoin d'aide</label>
+                    </a></li>
+                <li><a href="#">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Intéragir avec nous</label>
+                    </a></li>
+                <li><a href="#">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Foires Aux Questions</label>
+                    </a></li>
+                <li><a href="#">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Qui sommes nous ?</label>
+                    </a></li>
             </ul>
         </nav>
-
     </header>

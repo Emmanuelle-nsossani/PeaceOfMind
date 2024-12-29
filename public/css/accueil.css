@@ -91,7 +91,7 @@ body {
         justify-content: center;
         height: 60px;
         background-color: white;
-        
+
     }
 
     nav li:nth-child(4) {
@@ -106,6 +106,76 @@ body {
         font-size: 18px;
         font-family: var(--font-main);
         text-decoration: none;
+    }
+
+    
+    #menu-container {
+        display: flex;
+        width: 30%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    #menuToggle {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #span {
+        grid-column: 1;
+        grid-row: 1
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: var(--bleu-fonce);
+        border-radius: 3px;
+
+        z-index: 1;
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+
+    .menu {
+        display: none; 
+    }
+
+    #menuToggle.active #span span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+    }
+    
+    #menuToggle.active #span span:nth-child(2) {
+        opacity: 0; /* Cache la ligne du milieu */
+    }
+    
+    #menuToggle.active #span span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+    }
+    
+    #menuToggle.active + nav #menuu {
+        display: block; /* Affiche le menu quand le burger est activé */
+    }
+
+    .active #span {
+        top: 4px;
+        position: relative;
     }
 
 
@@ -198,43 +268,6 @@ body {
     .logo-container {
         width: 70%;
 
-    }
-
-    #menu-container {
-        display: flex;
-        width: 30%;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-
-    #menuToggle {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        top: 50px;
-        left: 50px;
-        z-index: 1;
-        -webkit-user-select: none;
-        user-select: none;
-    }
-
-    #span {
-        grid-column: 1;
-        grid-row: 1
-    }
-
-    #menuToggle span {
-        display: block;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        position: relative;
-
-        background: var(--bleu-fonce);
-        border-radius: 3px;
-
-        z-index: 1;
     }
 
     #banniere {
