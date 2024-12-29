@@ -370,5 +370,38 @@ body {
 
     /* FIN CSS DE BASE */
 
+    .bold {
+        font-weight: bold;
+    }
+
+    h1 {
+        color: var(--bleu-fonce);
+        font-family: var(--font-title);
+        font-family: var(--font-title);
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        padding: 60px 30px 40px 30px;
+    }
+
+    #besoin-aide h1 {
+        background-position-y: 23px;
+        background-image: url(../images/nuage.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: 100px;
+    }
+
+    #intro {
+        margin: 0 30px;
+    }
+
+    #intro img {
+        float: right;
+    }
+
+    #intro-p {
+        margin-top: 30px;
+    }
 
 }

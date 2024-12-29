@@ -39,7 +39,8 @@
     <header id="header-mobile-container">
         <div id="header-mobile">
             <div class="logo-container">
-                <img class="logo-header" src="public/images/logo.png" alt="Logo Peace of Mind">
+                <a href="index.php"> <img class="logo-header" src="public/images/logo.png" alt="Logo Peace of Mind">
+                </a>
             </div>
             <div id="menu-container">
                 <img id="login-icon" src="public/images/login-icon.svg" alt="">
