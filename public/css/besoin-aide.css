@@ -108,7 +108,7 @@ body {
         text-decoration: none;
     }
 
-    
+
     #menu-container {
         display: flex;
         width: 30%;
@@ -152,25 +152,27 @@ body {
     }
 
     .menu {
-        display: none; 
+        display: none;
     }
 
     #menuToggle.active #span span:nth-child(1) {
         transform: rotate(45deg);
         position: relative;
     }
-    
+
     #menuToggle.active #span span:nth-child(2) {
-        opacity: 0; /* Cache la ligne du milieu */
+        opacity: 0;
+        /* Cache la ligne du milieu */
     }
-    
+
     #menuToggle.active #span span:nth-child(3) {
         transform: rotate(-45deg);
         position: relative;
     }
-    
-    #menuToggle.active + nav #menu {
-        display: block; /* Affiche le menu quand le burger est activé */
+
+    #menuToggle.active+nav #menu {
+        display: block;
+        /* Affiche le menu quand le burger est activé */
     }
 
     .active #span {
@@ -182,6 +184,7 @@ body {
     /* FOOTER */
 
     footer {
+        margin-top: 60px;
         padding-top: 15vw;
         background-image: url(../images/footer.svg);
         background-size: cover;
@@ -269,6 +272,7 @@ body {
         width: 70%;
 
     }
+
     p {
         font-size: 16px;
         font-family: var(--font-main);
@@ -374,6 +378,8 @@ body {
         font-weight: bold;
     }
 
+    p {}
+
     h1 {
         color: var(--bleu-fonce);
         font-family: var(--font-title);
@@ -402,6 +408,44 @@ body {
 
     #intro-p {
         margin-top: 30px;
+        text-align: justify;
     }
 
+    #titre-question {
+        background-color: var(--bleu);
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 20px;
+        padding: 10px;
+        font-family: var(--font-main);
+        width: 100%;
+    }
+
+    .question {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pour-qui button {
+        text-align: center;
+        gap: 20px
+    }
+
+    .proposition {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* .pour-moi-container {
+        flex-direction: column;
+    } */
 }

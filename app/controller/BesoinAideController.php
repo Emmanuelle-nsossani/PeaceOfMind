@@ -22,7 +22,7 @@ class BesoinAideController extends Controller
             'page_title' => "Besoin d'aide",
             'css' => 'besoin-aide.css',
             'fontAwesome' => true,
-            'scripts' => ['carte.js'],
+            'scripts' => ['carte.js','besoin-aide.js'],
             'view' => 'app/view/besoin-aide.view.php',
             'layout' => 'app/view/common/layout.php',
         ];
