@@ -3,7 +3,7 @@
         <img src="public\images\titre noir POM.png" alt="">
         <p>L'espoir d'un nouveau départ</p>
     </section>
-    <section>
+    <section id="section-sante-mentale">
         <div id="sante-mentale">
             <h4>Allez-vous bien mentalement ?</h4>
             <div id="sante-mentale-text">
