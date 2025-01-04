@@ -47,6 +47,10 @@ body {
 
 @media (min-width: 481px) {
 
+    main {
+        margin: 0 7%;
+    }
+
     #header-mobile-container {
         display: none;
     }
@@ -118,9 +122,12 @@ body {
 
     #section-sante-mentale {
         display: flex;
+        margin-top: 30px;
+        justify-content: center;
     }
 
     #sante-mentale {
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -162,6 +169,7 @@ body {
     }
 
     #sante-mentale {
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -183,6 +191,16 @@ body {
 
     #sante-mentale p {
         text-align: justify;
+    }
+
+    #button-container::after {
+        content: '';
+        background-image: url(../images/appli.png);
+        width: 60px;
+        background-size: cover;
+        height: 70px;
+        position: absolute;
+        transform: translate(260%, 60px);
     }
 
     .button {
@@ -245,15 +263,15 @@ body {
 
     #button-container {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: space-evenly;
         margin: 0 30px;
     }
 
-    #button-container button {
-        width: 45%;
+    #button-container .button {
+        width: 100%;
         justify-content: space-evenly;
         color: black;
-
     }
 
     #button-container img {
@@ -872,7 +890,6 @@ body {
     }
 
     #section-sante-mentale {
-        margin-top: 50px;
         display: block;
     }
 
@@ -900,7 +917,7 @@ body {
         text-align: justify;
     }
 
-    #sante-mentale .button{
+    #sante-mentale .button {
         width: fit-content;
     }
 
