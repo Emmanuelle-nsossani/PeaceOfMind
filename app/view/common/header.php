@@ -21,20 +21,26 @@
 
 <body>
     <header id="header-desktop">
-        <ul>
-            <li id="logo">
-                <a href="">
-                    <img src="public\images\logo.png" alt="" srcset="">
-                </a>
-                <a href="">
-                    Peace Of Mind
-                </a>
-            </li>
-            <li><a href="index.php?page=besoin-aide">J'ai besoin d'aide</a></li>
-            <li><a href="">Se renseigner</a></li>
-            <li><a href="#">Intéragir avec nous</a></li>
-            <li><a href="#">Qui sommes nous</a></li>
-        </ul>
+        <div id="bandeau-header">
+            <div class="container-logo">
+                <img class="logo" src="public\images\logo.png" alt="logo Peace of Mind">
+                <img class="logo-titre" src="public\images\titre noir POM.png" alt="Peace of Mind">
+            </div>
+            <div id="container-slogan">
+                <p id="slogan">L'espoir d'un nouveau départ</p>
+            </div>
+            <div id="container-login">
+                <img id="login-icon" src="public\images\login-icon.svg" alt="icon connexion">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">J'ai besoin d'aide</a></li>
+                <li><a href="">Intéragir avec nous<img src="public\images\menu-deroulant.svg" alt="voir plus"></a></li>
+                <li><a href="">Foire aux questions</a></li>
+                <li><a href="">Qui sommes nous</a></li>
+            </ul>
+        </nav>
     </header>
     <header id="header-mobile-container">
         <div id="header-mobile">

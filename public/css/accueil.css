@@ -41,6 +41,75 @@ body {
     padding: 0;
 }
 
+/* VERSION DESKTOP */
+
+#header-mobile-container {
+    display: none;
+}
+
+#bandeau-header {
+    padding: 1% 7%;
+    background-color: var(--bleu);
+    display: flex;
+    justify-content: space-between;
+}
+
+#bandeau-header div {
+    display: flex;
+    align-items: center;
+    width: 20vw;
+}
+
+#header-desktop .logo {
+    width: 25%;
+}
+
+#header-desktop .logo-titre {
+    width: 45%;
+}
+
+#bandeau-header .container-logo {
+    justify-content: flex-start;
+}
+
+#container-slogan {
+    justify-content: center;
+    font-family: var(--font-main);
+    font-weight: 600;
+}
+
+#container-login {
+    justify-content: flex-end;
+}
+
+#login-icon {
+    width: 3vw;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    height: 80px;
+    align-items: center;
+}
+
+nav ul a {
+    color: #000000;
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-weight: 500;
+}
+
+nav ul img {
+    margin-left: 10px;
+    width: 20px;
+}
+
+#banniere {
+    display: none;
+}
+
 /* RESPONSIVE MOBILE */
 
 @media (max-width: 480px) {
@@ -108,7 +177,7 @@ body {
         text-decoration: none;
     }
 
-    
+
     #menu-container {
         display: flex;
         width: 30%;
@@ -152,25 +221,27 @@ body {
     }
 
     .menu {
-        display: none; 
+        display: none;
     }
 
     #menuToggle.active #span span:nth-child(1) {
         transform: rotate(45deg);
         position: relative;
     }
-    
+
     #menuToggle.active #span span:nth-child(2) {
-        opacity: 0; /* Cache la ligne du milieu */
+        opacity: 0;
+        /* Cache la ligne du milieu */
     }
-    
+
     #menuToggle.active #span span:nth-child(3) {
         transform: rotate(-45deg);
         position: relative;
     }
-    
-    #menuToggle.active + nav #menu {
-        display: block; /* Affiche le menu quand le burger est activé */
+
+    #menuToggle.active+nav #menu {
+        display: block;
+        /* Affiche le menu quand le burger est activé */
     }
 
     .active #span {
@@ -292,7 +363,7 @@ body {
         font-family: var(--font-main);
     }
 
-    
+
     header nav {
         z-index: 10;
     }
