@@ -86,6 +86,30 @@
                     <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
                 </div>
             </div>
+            <div class="carte-container">
+                <div class="carte recto">
+                    <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
+                </div>
+                <div class="carte verso">
+                    <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
+                </div>
+            </div>
+            <div class="carte-container">
+                <div class="carte recto">
+                    <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
+                </div>
+                <div class="carte verso">
+                    <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
+                </div>
+            </div>
+            <div class="carte-container">
+                <div class="carte recto">
+                    <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
+                </div>
+                <div class="carte verso">
+                    <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
+                </div>
+            </div>
         </div>
     </section>
     <section id="blog-section">
@@ -94,16 +118,41 @@
             <img src="public\images\message-icon.svg" alt="message-icon">
             <p>Des articles sur la santé mentale</p>
         </div>
-        <div class="article-container">
+        <div class="article-container-mobile">
             <div id="last-article">
                 <p>Notre dernier article</p>
             </div>
-            <div id="container-img-art">
-                <img src="public\images\last-article.png" alt="illustration santé mentale">
-                <p id="date-article">20/12/24</p>
+            <div id="header-article">
+                <div id="container-img-art">
+                    <img src="public\images\last-article.png" alt="illustration santé mentale">
+                    <p id="date-article">20/12/24</p>
+                </div>
             </div>
             <div id="text-last-article">
                 <p>La santé mentale : <br> Qu'est-ce que c'est <br> et comment la présercer ?</p>
+                <p>Environ 20% de la population, soit 13 millions de Français, souffrent de troubles psychiques tels que la dépression et l'anxiété. Les jeunes adultes entre 18 et 25 ans sont particulièrement affectés, avec une augmentation notable des symptômes anxieux et dépressifs depuis 2020. Ces symptômes proviennent d’une mauvaise santé mentale. <br>
+
+                    La “Santé mentale” ? Quésaco ? <br>
+
+                    La santé mentale désigne la santé psychologique d’une personne, soit son bien être. Ce n’est pas quelque chose de figé, plutôt une évolution perpétuelle de notre cerveau, en recherche d’un équilibre psychique, en fonction de nos expériences ...</p>
+            </div>
+            <div id="button-article">
+                <button class="button">Lire la suite</button>
+            </div>
+        </div>
+        <div class="article-container-desktop">
+            <div id="last-article">
+                <p>Notre dernier article</p>
+            </div>
+            <div id="header-article">
+                <div id="container-img-art">
+                    <img src="public\images\last-article.png" alt="illustration santé mentale">
+                    <p id="date-article">20/12/24</p>
+                </div>
+            </div>
+            <p>La santé mentale : Qu'est-ce que c'est et comment la présercer ?</p>
+            
+            <div id="text-last-article">
                 <p>Environ 20% de la population, soit 13 millions de Français, souffrent de troubles psychiques tels que la dépression et l'anxiété. Les jeunes adultes entre 18 et 25 ans sont particulièrement affectés, avec une augmentation notable des symptômes anxieux et dépressifs depuis 2020. Ces symptômes proviennent d’une mauvaise santé mentale. <br>
 
                     La “Santé mentale” ? Quésaco ? <br>
@@ -141,18 +190,19 @@
             <p>Ceux qui ont pu bénificier de notre aide</p>
         </div>
         <div id="temoignages-container">
-                <div class="bold"><</div>
-                <div id="temoignage-container">
-                    <div id="identite">
-                        <img src="public\images\malika.png" alt="Malika">
-                        <p>Malika</p>
+            <div class="bold">
+                << /div>
+                    <div id="temoignage-container">
+                        <div id="identite">
+                            <img src="public\images\malika.png" alt="Malika">
+                            <p>Malika</p>
+                        </div>
+                        <div id="text-temoignage">
+                            <p>Du burn out à bénévole chez POM</p>
+                            <p>Du burn-out à bénévole chez Peace of Mind Témoignage de Malika, étudiante en médecine qui n’avait plus espoir en la vie. J’ai sombré dans un cercle vicieux de stress, d’auto-dévalorisation et d’ <a href="">Lire Plus</a></p>
+                        </div>
                     </div>
-                    <div id="text-temoignage">
-                        <p>Du burn out à bénévole chez POM</p>
-                        <p>Du burn-out à bénévole chez Peace of Mind Témoignage de Malika, étudiante en médecine qui n’avait plus espoir en la vie. J’ai sombré dans un cercle vicieux de stress, d’auto-dévalorisation et d’ <a href="">Lire Plus</a></p>
-                    </div>
-                </div>
-                <div class="bold">></div>
+                    <div class="bold">></div>
             </div>
         </div>
         <img id="soutien-img" src="public\images\soutien-illus.svg" alt="soutien illus">
