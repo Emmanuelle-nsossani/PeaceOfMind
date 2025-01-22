@@ -41,6 +41,195 @@ body {
     padding: 0;
 }
 
+/* RESPONSIVE DESKTOP */
+
+@media (min-width: 481px) {
+
+    /* FOOTER */
+
+    #header-mobile-container {
+        display: none;
+    }
+
+    #bandeau-header {
+        padding: 1% 7%;
+        background-color: var(--bleu);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #bandeau-header div {
+        display: flex;
+        align-items: center;
+        width: 20vw;
+    }
+
+    #header-desktop .logo {
+        width: 25%;
+    }
+
+    #header-desktop .logo-titre {
+        width: 45%;
+    }
+
+    #bandeau-header .container-logo {
+        justify-content: flex-start;
+    }
+
+    #container-slogan {
+        justify-content: center;
+        font-family: var(--font-main);
+        font-weight: 600;
+    }
+
+    #container-login {
+        justify-content: flex-end;
+    }
+
+    #login-icon {
+        width: 3vw;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        height: 80px;
+        align-items: center;
+    }
+
+    nav ul a {
+        color: #000000;
+        text-decoration: none;
+        font-family: var(--font-main);
+        font-weight: 500;
+    }
+
+    nav ul img {
+        margin-left: 10px;
+        width: 20px;
+    }
+
+    #banniere {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    #footer-mobile {
+        display: none;
+    }
+
+
+    #winstonOverlay {
+        display: none;
+    }
+
+    footer {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #FAAFBD;
+    }
+
+    footer .logo-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer .logo-container img {
+        width: 130px;
+    }
+
+    footer .bold {
+        color: var(--jaune);
+        font-size: 17px;
+        position: absolute;
+        margin-top: -60px;
+    }
+
+    footer .button {
+        background-color: var(--jaune);
+        width: fit-content;
+        display: flex;
+        padding: 4px;
+        position: relative;
+        top: -30px;
+    }
+
+    .titre-footer {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .titre-footer:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .container-icon {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .icon {
+        display: flex;
+        background-color: white;
+        border-radius: 100px;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        box-shadow: 0px 4px 4px 0px rgb(93 93 93 / 31%) inset;
+        transition: 0.2s ease-in;
+    }
+
+    .icon a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon:hover {
+        transition: 0.2s ease-in;
+        transform: scale(1.1);
+    }
+
+    .icon img {
+        width: 65%;
+    }
+
+    #slogan-footer {
+        margin-top: 30px;
+    }
+
+    #bottom-footer {
+        display: flex;
+        padding-bottom: 50px;
+    }
+
+    #bottom-footer ul {
+        list-style-type: none;
+    }
+
+    footer a {
+        color: white;
+        font-family: var(--font-main);
+    }
+
+    #container-footer-inline {
+        justify-content: space-around;
+        display: flex;
+        width: 100%;
+    }
+
+}
+
 /* RESPONSIVE MOBILE */
 
 @media (max-width: 480px) {
@@ -56,6 +245,7 @@ body {
     }
 
     #header-mobile {
+        display: block;
         top: 0;
         left: 0;
         width: 100%;
@@ -180,11 +370,13 @@ body {
         position: relative;
     }
 
-
     /* FOOTER */
 
+    #footer-desktop {
+        display: none;
+    }
+
     footer {
-        margin-top: 60px;
         padding-top: 15vw;
         background-image: url(../images/footer.svg);
         background-size: cover;
@@ -209,6 +401,7 @@ body {
         font-size: 17px;
         position: absolute;
         margin-top: -60px;
+        text-align: center;
     }
 
     footer .button {
@@ -238,10 +431,30 @@ body {
     }
 
     .icon {
-        width: 50px;
-        height: 50px;
+        display: flex;
         background-color: white;
         border-radius: 100px;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0px 4px 4px 0px rgb(93 93 93 / 31%) inset;
+        transition: 0.2s ease-in;
+    }
+
+    .icon a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon:hover {
+        transition: 0.2s ease-in;
+        transform: scale(1.1);
+    }
+
+    .icon img {
+        width: 65%;
     }
 
     #slogan-footer {
