@@ -1,0 +1,276 @@
+/* ========================
+   Importation des Polices
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ========================
+   Styles Généraux
+========================= */
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Police principale */
+    box-sizing: border-box; /* Inclure bordures et padding dans les dimensions */
+}
+
+
+
+/* ========================
+   Footer Principal
+========================= */
+footer {
+    width: 100%;
+    background-image: url(IMG/footer.svg); /* Image de fond */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vw 0 0; /* Espacement supérieur */
+}
+
+/* Texte en gras dans le footer */
+footer .bold {
+    color: #FFC114;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -80px;
+}
+
+/* Bouton dans le footer */
+footer .button {
+    border: none;
+    background-color: #feda7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -40px;
+    padding: 0 6vh;
+    border-radius: 40px;
+    max-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.103) 0px 6px 6px;
+    overflow: hidden;
+}
+
+footer .button p {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding: 15px 0;
+}
+
+footer .button img{
+    position: absolute;
+    right: 0;
+    height: 80%;
+    object-fit: contain;
+}
+
+/* Contenu principal du footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    margin-top: 0;
+}
+
+/* Titre dans le footer */
+.titre-footer {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+.titre-footer:nth-child(2) {
+    margin-top: 30px;
+}
+
+/* Icônes dans le footer */
+.container-icon {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Permet le retour à la ligne */
+    justify-content: center; /* Centre les éléments */
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 7;
+}
+
+.container-icon .icon  img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+/* Slogan dans le footer */
+#slogan-footer {
+    margin-top: 50px;
+}
+
+/* ========================
+   Bas du Footer
+========================= */
+#bottom-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permet le retour à la ligne */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+/* Logo dans le footer */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.logo-container .logo-header {
+    width: 50%;
+}
+
+.logo-container .title_logo_footer {
+    width: 100%;
+    max-width: 150%;
+    margin-top: 10px;
+}
+
+/* Listes de liens dans le footer */
+#bottom-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#bottom-footer ul li {
+    text-decoration: none;
+}
+
+#bottom-footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: font-size 0.3s ease;
+}
+
+#bottom-footer ul li a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+#bottom-footer ul li a:active {
+    color: yellow;
+}
+
+/* ========================
+   Liens Généraux dans Footer
+========================= */
+footer a {
+    color: white;
+    list-style-type: none;
+}
+
+@media (max-width: 400px) {
+    .container-icon {
+        justify-content: center; /* Centrer les icônes */
+    }
+
+    .icon {
+        flex: 0 0 calc(50% - 15px); /* Chaque icône occupe 50% de la ligne moins le gap */
+        max-width: 40px; /* Taille fixe pour le cercle */
+        height: 40px; /* Taille fixe pour le cercle */
+    }
+
+    /* Pour le dernier élément s'il reste seul */
+    .icon:nth-child(5) {
+        flex: 0 0 100%; /* L'élément occupe toute la largeur */
+        max-width: 60px; /* Garde la taille fixe pour le cercle */
+        margin: 0 auto; /* Centrer le dernier élément */
+    }
+
+    
+    #bottom-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: stretch;
+        margin-bottom: 10%;
+        box-sizing: border-box; /* Inclut les bordures et paddings dans la largeur totale */
+
+    }
+
+    #bottom-footer ul {
+        margin-top: 20; Réinitialise les marges
+
+    }
+}
+
+@media (min-width: 700px) {
+    @media (max-width: 1024px) {
+    .container-icon {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+        justify-content: center; /* Centre les éléments sur chaque ligne */
+
+    }
+    
+    .icon {
+        width: 90px; /* Taille fixe pour conserver le cercle */
+        height: 90px; /* Taille fixe pour conserver le cercle */
+        background-color: white;
+        border-radius: 50%; /* Assure que l'élément reste circulaire */
+        display: flex; /* Permet de centrer les enfants */
+        justify-content: center; /* Centre horizontalement */
+        align-items: center; /* Centre verticalement */
+        overflow: hidden; /* Cache les parties de l'image qui dépassent */
+        position: relative; /* Utile pour le contrôle des enfants */
+        flex-shrink: 0; /* Empêche les icônes de se déformer */
+        transition: width 1.5s ease; /* Transition fluide pour la taille du texte */
+
+    }
+    
+    .container-icon .icon img {
+        max-width: 70%; /* L'image s'adapte à la largeur du conteneur */
+        max-height: 70%; /* L'image s'adapte à la hauteur du conteneur */
+        object-fit: contain; /* Maintient un bon rapport d'aspect pour couvrir */
+    }
+    
+    .titre-footer {
+        font-size: 30px;
+        transition: font-size 1.5s ease; /* Transition fluide pour la taille du texte */
+
+
+    }
+    #bottom-footer ul li a {
+        font-size: 25px; /* Augmente la taille du texte pour les grands écrans */
+    }
+}
+}
+
