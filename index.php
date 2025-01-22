@@ -25,6 +25,10 @@ try {
             $besoinAideController = new app\controller\ConnexionController();
             $besoinAideController->genererPageConnexion();
             break;
+        case 'qui-sommes-nous':
+            $quiSommesNousController = new app\controller\QuiSommesNousController();
+            $quiSommesNousController->genererPageQuiSommesNous();
+            break;
         default:
             throw new Exception("Page inconnue : {$page}");
     }

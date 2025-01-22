@@ -35,10 +35,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">J'ai besoin d'aide</a></li>
+                <li><a href="index.php?page=besoin-aide">J'ai besoin d'aide</a></li>
                 <li><a href="">Intéragir avec nous<img src="public\images\menu-deroulant.svg" alt="voir plus"></a></li>
                 <li><a href="">Foire aux questions</a></li>
-                <li><a href="">Qui sommes nous</a></li>
+                <li><a href="index.php?page=qui-sommes-nous">Qui sommes nous</a></li>
             </ul>
         </nav>
     </header>
@@ -71,7 +71,7 @@
                 <li><a href="#">
                         <label for="menuCheckbox" onclick="this.parentNode.click();">Foires Aux Questions</label>
                     </a></li>
-                <li><a href="#">
+                <li><a href="index.php?page=qui-sommes-nous">
                         <label for="menuCheckbox" onclick="this.parentNode.click();">Qui sommes nous ?</label>
                     </a></li>
             </ul>
