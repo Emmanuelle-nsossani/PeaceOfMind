@@ -11,7 +11,7 @@
                 <p>Nous vous proposons un test conçu pour évaluer votre niveau de santé mentale, il vous aidera à mieux comprendre votre état émotionnel et psychologique. En un instant, obtenez un résultat chiffré et détaillé. Pour en savoir plus évaluez votre mental en 2min.</p>
                 <!-- button from Uiverse.io by Creatlydev -->
             </div>
-            <button href="#" class="button">
+            <button class="button">
                 <span class="button__icon-wrapper">
                     <svg
                         viewBox="0 0 14 15"
@@ -42,11 +42,11 @@
         <div id="button-container">
             <button class="button">
                 <img src="public\images\souris.png" alt="souris">
-                Je me renseigne
+                <p>Je me renseigne</p>
             </button>
             <button class="button">
                 <img src="public\images\tel.png" alt="tel">
-                Je veux en parler
+                <p>Je veux en parler</p>
             </button>
         </div>
     </section>
@@ -150,9 +150,10 @@
                     <p id="date-article">20/12/24</p>
                 </div>
             </div>
-            <p>La santé mentale : Qu'est-ce que c'est et comment la présercer ?</p>
-            
             <div id="text-last-article">
+
+                <p>La santé mentale : Qu'est-ce que c'est et comment la présercer ?</p>
+
                 <p>Environ 20% de la population, soit 13 millions de Français, souffrent de troubles psychiques tels que la dépression et l'anxiété. Les jeunes adultes entre 18 et 25 ans sont particulièrement affectés, avec une augmentation notable des symptômes anxieux et dépressifs depuis 2020. Ces symptômes proviennent d’une mauvaise santé mentale. <br>
 
                     La “Santé mentale” ? Quésaco ? <br>
@@ -190,8 +191,7 @@
             <p>Ceux qui ont pu bénificier de notre aide</p>
         </div>
         <div id="temoignages-container">
-            <div class="bold">
-                << /div>
+            <div class="bold"> < </div>
                     <div id="temoignage-container">
                         <div id="identite">
                             <img src="public\images\malika.png" alt="Malika">

@@ -3,7 +3,7 @@
     <button class="button">
         <div></div>
         <p>Faire un don</p>
-        <img src="public\images\dons-button.png" alt="dons">
+        <img src="public/images/dons-button.png" alt="dons">
     </button>
     <p class="titre-footer">Où nous retrouver</p>
     <div class="container-icon">
@@ -22,8 +22,8 @@
     <p class="titre-footer" id="slogan-footer">L'espoir d'un nouveau départ</p>
     <div id="bottom-footer">
         <div class="logo-container">
-            <img class="logo-header" src="public\images\logo.png" alt="logo">
-            <img src="public\images\titre-blanc.png" alt="">
+            <img class="logo-header" src="public/images/logo.png" alt="logo">
+            <img src="public/images/titre-blanc.png" alt="">
         </div>
         <ul>
             <li><a href="#">Contact</a></li>
