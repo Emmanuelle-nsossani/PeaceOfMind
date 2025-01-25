@@ -7,7 +7,7 @@
         </div>
         <p id="intro-p">Après quelques questions rapides, vous serez <span class="bold">orienté</span> vers notre sélection de <span class="bold">blogs informatifs</span> ou directement vers <span class="bold">une carte interactive qui répertorie des professionnels près de chez vous</span>
             (psychologues, nutritionnistes, et autres experts). Afin d’être redirigé vers le meilleur service !</p>
-        <div id="question pour-qui-container">
+        <div class="question pour-qui-container">
             <div id="titre-question">
                 <p>Je cherche une aide pour :</p>
             </div>
@@ -53,7 +53,7 @@
                 </button>
             </div>
         </div>
-        <!-- <div class="question pour-moi-container">
+        <div class="question pour-moi-container">
             <div id="titre-question">
                 <p>J'ai besoin d'un accompagnement personnalisé avec un professionnel (psychologue, nutritionniste, etc...)</p>
             </div>
@@ -75,8 +75,8 @@
                     </div>
                 </button>
             </div>
-        </div> -->
-        <!-- <div class="question pour-moi-container">
+        </div> 
+        <div class="question pour-moi-container">
             <div id="titre-question">
                 <p>Je préfère lire des informations, des conseils ou des témignages avant de contacter un professionnel ?</p>
             </div>
@@ -97,7 +97,7 @@
                         <p>Non</p>
                     </div>
                 </button>
-            </div> -->
+            </div> 
         </div>
     </section>
 </main>
