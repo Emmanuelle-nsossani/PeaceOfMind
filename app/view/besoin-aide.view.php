@@ -7,7 +7,32 @@
         </div>
         <p id="intro-p">Après quelques questions rapides, vous serez <span class="bold">orienté</span> vers notre sélection de <span class="bold">blogs informatifs</span> ou directement vers <span class="bold">une carte interactive qui répertorie des professionnels près de chez vous</span>
             (psychologues, nutritionnistes, et autres experts). Afin d’être redirigé vers le meilleur service !</p>
-        <div class="question pour-qui-container">
+        <form action="" method="get">
+            <div id="titre-question">
+                <p>Je cherche une aide pour :</p>
+            </div>
+            <label class="titre-question" for="question1"></label>
+
+            <div class="proposition" id="pour-qui">
+                <button class="button" id="pour-moi">
+                    <div>
+                        <p>A</p>
+                    </div>
+                    <div>
+                        <p>Moi</p>
+                    </div>
+                </button>
+                <button class="button" id="pour-proche">
+                    <div>
+                        <p>B</p>
+                    </div>
+                    <div>
+                        <p>Pour un proche</p>
+                    </div>
+                </button>
+            </div>
+        </form>
+        <!-- <div class="question pour-qui-container">
             <div id="titre-question">
                 <p>Je cherche une aide pour :</p>
             </div>
@@ -75,7 +100,7 @@
                     </div>
                 </button>
             </div>
-        </div> 
+        </div>
         <div class="question pour-moi-container">
             <div id="titre-question">
                 <p>Je préfère lire des informations, des conseils ou des témignages avant de contacter un professionnel ?</p>
@@ -97,7 +122,7 @@
                         <p>Non</p>
                     </div>
                 </button>
-            </div> 
-        </div>
+            </div>
+        </div> -->
     </section>
 </main>

@@ -153,7 +153,7 @@
                 </div>
             </div>
             <div id="text-last-article">
-                <p>La santé mentale : <br> Qu'est-ce que c'est <br> et comment la présercer ?</p>
+                <p>La santé mentale : <br> Qu'est-ce que c'est <br> et comment la préserver ?</p>
                 <p>Environ 20% de la population, soit 13 millions de Français, souffrent de troubles psychiques tels que la dépression et l'anxiété. Les jeunes adultes entre 18 et 25 ans sont particulièrement affectés, avec une augmentation notable des symptômes anxieux et dépressifs depuis 2020. Ces symptômes proviennent d’une mauvaise santé mentale. <br>
 
                     La “Santé mentale” ? Quésaco ? <br>
@@ -231,7 +231,6 @@
             </div>
         </div>
         <img id="soutien-img" src="public\images\soutien-illus.svg" alt="soutien illus">
-        e
     </section>
 
 </main>
