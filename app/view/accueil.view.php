@@ -64,49 +64,73 @@
         <div id="cartes-container">
             <div class="carte-container">
                 <div class="carte recto">
+                    <p>C’est quoi la santé mentale ?</p>
                     <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
                 </div>
                 <div class="carte verso">
+                    <p>La santé mentale va au-delà de l'absence de troubles. C’est un état de bien-être qui permet à chacun de réaliser son potentiel, faire face aux difficultés de la vie, travailler de manière productive et contribuer à la communauté. </p>
                     <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
                 </div>
             </div>
             <div class="carte-container">
                 <div class="carte recto">
+                    <p>Avoir une bonne santé mentale, c'est le fait de ne pas souffrir de maladies mentales ?</p>
                     <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
                 </div>
                 <div class="carte verso">
+                    <p>Être en bonne santé n'est pas seulement ne pas avoir de maladie ou d'infirmité, mais c'est ressentir un bien-être physique, mental et social. Un sentiment négatif peut être néfaste à notre santé mentale.</p>
                     <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
                 </div>
             </div>
             <div class="carte-container">
                 <div class="carte recto">
+                    <p>La santé mentale est un sujet qui concerne que les autres ?</p>
                     <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
                 </div>
                 <div class="carte verso">
+                    <p>Faux, nous sommes concernés et vulnérables car chaque instant d’une vie peut nous mener à aller mal mentalement.</p>
                     <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
                 </div>
             </div>
             <div class="carte-container">
                 <div class="carte recto">
+                    <p>Être dépressif, c’est être constamment triste et déprimé ?</p>
                     <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
                 </div>
                 <div class="carte verso">
+                    <p>La dépression est une maladie complexe, avec des symptômes physiques (fatigue, troubles du sommeil) et émotionnels (anxiété, pensées suicidaires). Elle peut se cacher sous un "sourire", où la personne lutte intérieurement contre le désespoir.</p>
                     <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
                 </div>
             </div>
             <div class="carte-container">
                 <div class="carte recto">
+                    <p>Vrai ou faux. La santé mentale est un problème réservé aux adultes ?</p>
                     <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
                 </div>
                 <div class="carte verso">
+                    <p>Les troubles mentaux touchent toutes les tranches d'âge, y compris les jeunes, avec des affections comme l'anxiété, la dépression et les troubles alimentaires.</p>
                     <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
                 </div>
             </div>
             <div class="carte-container">
                 <div class="carte recto">
+                    <p>Vrai ou faux: Les médicaments sont les seuls remèdes permettant d’ aller mieux ?
+                    </p>
                     <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
                 </div>
                 <div class="carte verso">
+                    <p>Faux. Bien que les médicaments puissent être nécessaires pour certains troubles mentaux, ils ne sont pas la seule solution. Un soutien social peut apporter un rôle essentiel.</p>
+                    <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
+                </div>
+            </div>
+            <div class="carte-container">
+                <div class="carte recto">
+                    <p>Vrai ou faux: Les troubles mentaux sont toujours visibles ?
+                    </p>
+                    <img class="" src="public\images\carte-verso.svg" alt="carte-recto">
+                </div>
+                <div class="carte verso">
+                    <p>On a tendance à associer la santé mentale à des signes physiques évidents comme pleurer ou s’isoler mais elle peut passer inaperçu.</p>
                     <img class="" src="public\images\carte-recto.svg" alt="carte-verso">
                 </div>
             </div>
@@ -191,7 +215,8 @@
             <p>Ceux qui ont pu bénificier de notre aide</p>
         </div>
         <div id="temoignages-container">
-            <div class="bold"> < </div>
+            <div class="bold">
+                < </div>
                     <div id="temoignage-container">
                         <div id="identite">
                             <img src="public\images\malika.png" alt="Malika">
@@ -206,6 +231,7 @@
             </div>
         </div>
         <img id="soutien-img" src="public\images\soutien-illus.svg" alt="soutien illus">
+        e
     </section>
 
 </main>

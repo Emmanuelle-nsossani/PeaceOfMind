@@ -306,7 +306,7 @@ body {
         margin: 90px 7% 0 7%;
     }
 
-    #saviez-vous p {
+    #saviez-vous-text p {
         text-align: justify;
     }
 
@@ -333,7 +333,6 @@ body {
         display: flex;
         overflow-x: auto;
         overflow-y: hidden;
-        white-space: nowrap;
         gap: 10px;
         padding: 10px;
         width: 100%;
@@ -344,8 +343,7 @@ body {
         /* Couleurs personnalisées de la scrollbar */
     }
 
-    .carte,
-    .carte p {
+    .carte {
         box-sizing: border-box;
     }
 
@@ -360,6 +358,7 @@ body {
 
     .carte {
         display: flex;
+        align-items: flex-start;
         position: absolute;
         width: 90%;
         border-radius: 20px;
@@ -369,8 +368,15 @@ body {
     }
 
     .carte p {
-        width: 190px;
-        height: auto;
+        font-weight: bold;
+        margin-top: 20px;
+        position: absolute;
+        padding: 0 7px;
+    }
+
+    .recto p {
+        color: var(--bleu-fonce);
+        text-align: center;
 
     }
 
@@ -382,7 +388,12 @@ body {
 
     .verso {
         transform: rotateY(180deg);
+    }
 
+    .verso p {
+        text-align: center;
+        font-size: 15px;
+        color: var(--rose);
     }
 
     .flipped .recto {
@@ -1149,7 +1160,7 @@ body {
         margin-top: 30px;
     }
 
-    #saviez-vous p {
+    #saviez-vous-text p {
         text-align: justify;
     }
 
@@ -1178,7 +1189,6 @@ body {
         display: flex;
         overflow-x: auto;
         overflow-y: hidden;
-        white-space: nowrap;
         gap: 10px;
         padding: 10px;
         width: 100%;
@@ -1196,7 +1206,7 @@ body {
 
     .carte {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         position: absolute;
         width: 190px;
         border-radius: 20px;
@@ -1205,16 +1215,21 @@ body {
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
 
+    .carte img {}
+
     .carte p {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
         position: absolute;
-        height: auto;
-        width: calc(100% - 20px);
-        /* Laissez une marge pour éviter le dépassement */
-        overflow: hidden;
-        /* Cachez tout dépassement de texte */
+        padding: 0 7px;
     }
 
-    .carte img {}
+    .recto p {
+        color: var(--bleu-fonce);
+        text-align: center;
+    }
+
 
     .recto {
         transform: rotateY(0deg);
@@ -1222,7 +1237,12 @@ body {
 
     .verso {
         transform: rotateY(180deg);
+    }
 
+    .verso p {
+        text-align: center;
+        font-size: 15px;
+        color: var(--rose);
     }
 
     .flipped .recto {
