@@ -20,12 +20,12 @@ Ce projet est un site web développé pour une association dédiée à la santé
    ```
 2. Place les fichiers dans le dossier de ton serveur local (ex: `htdocs` pour XAMPP ou `www` pour WAMP).
 3. Configure la base de données avec PHPMyAdmin :
-   - Crée une base de données (ex : `sante_mentale`)
+   - Crée une base de données (ex : `peaceofmind`)
    - Importe le fichier `database.sql` qui se trouve dans le dssier
 4. Configure les identifiants de la base de données dans le fichier de connexion PHP :
    ```php
    $host = 'localhost';
-   $db = 'sante_mentale';
+   $db = 'peaceofmind';
    $user = 'root';
    $password = '';
    ```
