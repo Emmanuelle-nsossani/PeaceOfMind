@@ -134,6 +134,9 @@
         <script src="public/js/<?= $script ?>"></script>
     <?php endforeach ?>
 <?php endif ?>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPBHYSB_pR2ZgKCBWWOBd9Vk2iMSflzXg&libraries=maps,marker&v=beta"
+    defer></script>
 </body>
 
 

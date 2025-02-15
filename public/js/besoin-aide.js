@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextq1 = document.getElementById("next-q1");
     const nextq2 = document.getElementById("next-q2");
     const nextq3 = document.getElementById("next-q3");
+    // MAP
+    const mapOverlay = document.getElementById("map");
+    const closeMap = document.getElementById("close-map");
+    const buttonsAfficherMap = document.querySelectorAll(".afficher-map");
+
 
     nextq1.addEventListener("click", function (event) {
         event.preventDefault(); // Empêche la redirection de la page
@@ -23,5 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Empêche la redirection de la page
         question3.classList.add("question-hidden");
         question4.classList.remove("question-hidden");
+    });
+
+    buttonsAfficherMap.forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            mapOverlay.style.display = "flex";
+            // initMap(); // Charge la carte quand l'overlay s'affiche
+        });
+    });
+
+    closeMap.addEventListener("click", function () {
+        mapOverlay.style.display = "none";
     });
 });

@@ -103,3 +103,11 @@
         </form>
     </section>
 </main>
+<section id="map">
+    <div id="map-container">
+        <button id="close-map">Fermer</button>
+        <div id="carte">
+        <gmp-map center="37.4220656,-122.0840897" zoom="10" map-id="DEMO_MAP_ID" style="height: 400px"></gmp-map>
+        </div>
+    </div>
+</section>
