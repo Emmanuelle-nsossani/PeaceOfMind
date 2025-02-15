@@ -7,122 +7,99 @@
         </div>
         <p id="intro-p">Après quelques questions rapides, vous serez <span class="bold">orienté</span> vers notre sélection de <span class="bold">blogs informatifs</span> ou directement vers <span class="bold">une carte interactive qui répertorie des professionnels près de chez vous</span>
             (psychologues, nutritionnistes, et autres experts). Afin d’être redirigé vers le meilleur service !</p>
-        <form action="" method="get">
-            <div id="titre-question">
-                <p>Je cherche une aide pour :</p>
+        <form>
+            <div id="question1">
+                <div class="titre-question">
+                    <p>Je cherche une aide pour :</p>
+                </div>
+                <div class="proposition">
+                    <button class="button" id="next-q1">
+                        <div>
+                            <p>A</p>
+                        </div>
+                        <div>
+                            <p>Moi</p>
+                        </div>
+                    </button>
+                    <button class="button afficher-map">
+                        <div>
+                            <p>B</p>
+                        </div>
+                        <div>
+                            <p>Pour un proche</p>
+                        </div>
+                    </button>
+                </div>
             </div>
-            <label class="titre-question" for="question1"></label>
-
-            <div class="proposition" id="pour-qui">
-                <button class="button" id="pour-moi">
-                    <div>
-                        <p>A</p>
-                    </div>
-                    <div>
-                        <p>Moi</p>
-                    </div>
-                </button>
-                <button class="button" id="pour-proche">
-                    <div>
-                        <p>B</p>
-                    </div>
-                    <div>
-                        <p>Pour un proche</p>
-                    </div>
-                </button>
+            <div class="question-hidden" id="question2">
+                <div class="titre-question">
+                    <p>Je ressent un besoin d'urgence d'aide (detresse émotionnelle, <br>comportement à risque) ?</p>
+                </div>
+                <div class="proposition">
+                    <button class="button afficher-map">
+                        <div>
+                            <p>A</p>
+                        </div>
+                        <div>
+                            <p>Oui</p>
+                        </div>
+                    </button>
+                    <button class="button" id="next-q2">
+                        <div>
+                            <p>B</p>
+                        </div>
+                        <div>
+                            <p>Non</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="question-hidden" id="question3">
+                <div class="titre-question">
+                    <p>J'ai besoin d'un accompagnement personnalisé avec un professionnel (psychologue, nutritionniste, etc...)</p>
+                </div>
+                <div class="proposition">
+                    <button class="button afficher-map">
+                        <div>
+                            <p>A</p>
+                        </div>
+                        <div>
+                            <p>Oui</p>
+                        </div>
+                    </button>
+                    <button class="button" id="next-q3">
+                        <div>
+                            <p>B</p>
+                        </div>
+                        <div>
+                            <p>Non</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="question-hidden" id="question4">
+                <div class="titre-question">
+                    <p>Je préfère lire des informations, des conseils ou des témignages avant de contacter un professionnel ?</p>
+                </div>
+                <div class="proposition">
+                    <button class="button" id="link-article">
+                        <div>
+                            <p>A</p>
+                        </div>
+                        <div>
+                            <p>Oui</p>
+                        </div>
+                    </button>
+                    <button class="button afiicher-map">
+                        <div>
+                            <p>B</p>
+                        </div>
+                        <div>
+                            <p>Non</p>
+                        </div>
+                    </button>
+                </div>
             </div>
         </form>
-        <!-- <div class="question pour-qui-container">
-            <div id="titre-question">
-                <p>Je cherche une aide pour :</p>
-            </div>
-            <div class="proposition" id="pour-qui">
-                <button class="button" id="pour-moi">
-                    <div>
-                        <p>A</p>
-                    </div>
-                    <div>
-                        <p>Moi</p>
-                    </div>
-                </button>
-                <button class="button" id="pour-proche">
-                    <div>
-                        <p>B</p>
-                    </div>
-                    <div>
-                        <p>Pour un proche</p>
-                    </div>
-                </button>
-            </div>
-        </div>
-        <div class="question pour-moi-container">
-            <div id="titre-question">
-                <p>Je ressent un besoin d'urgence d'aide (detresse émotionnelle, <br>comportement à risque) ?</p>
-            </div>
-            <div class="proposition" id="pour-qui">
-                <button class="button" id="pour-moi">
-                    <div>
-                        <p>A</p>
-                    </div>
-                    <div>
-                        <p>Oui</p>
-                    </div>
-                </button>
-                <button class="button" id="pour-proche">
-                    <div>
-                        <p>B</p>
-                    </div>
-                    <div>
-                        <p>Non</p>
-                    </div>
-                </button>
-            </div>
-        </div>
-        <div class="question pour-moi-container">
-            <div id="titre-question">
-                <p>J'ai besoin d'un accompagnement personnalisé avec un professionnel (psychologue, nutritionniste, etc...)</p>
-            </div>
-            <div class="proposition" id="pour-qui">
-                <button class="button" id="pour-moi">
-                    <div>
-                        <p>A</p>
-                    </div>
-                    <div>
-                        <p>Oui</p>
-                    </div>
-                </button>
-                <button class="button" id="pour-proche">
-                    <div>
-                        <p>B</p>
-                    </div>
-                    <div>
-                        <p>Non</p>
-                    </div>
-                </button>
-            </div>
-        </div>
-        <div class="question pour-moi-container">
-            <div id="titre-question">
-                <p>Je préfère lire des informations, des conseils ou des témignages avant de contacter un professionnel ?</p>
-            </div>
-            <div class="proposition" id="pour-qui">
-                <button class="button" id="pour-moi">
-                    <div>
-                        <p>A</p>
-                    </div>
-                    <div>
-                        <p>Oui</p>
-                    </div>
-                </button>
-                <button class="button" id="pour-proche">
-                    <div>
-                        <p>B</p>
-                    </div>
-                    <div>
-                        <p>Non</p>
-                    </div>
-                </button>
-            </div>
-        </div> -->
     </section>
 </main>

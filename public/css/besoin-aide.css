@@ -377,6 +377,7 @@ body {
     }
 
     footer {
+        margin-top: 70px;
         padding-top: 15vw;
         background-image: url(../images/footer.svg);
         background-size: cover;
@@ -602,6 +603,8 @@ body {
         padding: 60px 30px 40px 30px;
     }
 
+    /* BESION AIDE  */
+
     #besoin-aide h1 {
         background-position-y: 23px;
         background-image: url(../images/nuage.svg);
@@ -624,7 +627,8 @@ body {
         text-align: justify;
     }
 
-    #titre-question {
+    .titre-question {
+        margin-bottom: 20px;
         background-color: var(--bleu);
         color: black;
         font-weight: bold;
@@ -634,6 +638,10 @@ body {
         padding: 10px;
         font-family: var(--font-main);
         width: 100%;
+    }
+
+    form {
+        margin-top: 60px;
     }
 
     .question {
@@ -657,6 +665,10 @@ body {
         align-items: center;
         flex-direction: column;
         width: 100%;
+    }
+
+    .question-hidden {
+        display: none;
     }
 
     /* .pour-moi-container {
