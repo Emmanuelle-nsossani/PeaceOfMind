@@ -671,6 +671,12 @@ body {
         display: none;
     }
 
+/* bloquer le defilement de la page quand map ouverte */
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
+    }
+
     /* .pour-moi-container {
         flex-direction: column;
     } */
@@ -702,8 +708,9 @@ body {
     }
     
     #close-map {
+        z-index: 10;
         position: absolute;
-        top: 10px;
+        bottom: 10px;
         right: 10px;
         background: red;
         color: white;

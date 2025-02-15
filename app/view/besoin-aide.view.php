@@ -107,7 +107,13 @@
     <div id="map-container">
         <button id="close-map">Fermer</button>
         <div id="carte">
-        <gmp-map center="37.4220656,-122.0840897" zoom="10" map-id="DEMO_MAP_ID" style="height: 400px"></gmp-map>
+            <gmp-map center="48.8566,2.3522" zoom="10" map-id="DEMO_MAP_ID" style="height: 1000px">
+                <!-- Marqueur à Bobigny -->
+                <gmp-advanced-marker position="48.9168,2.4366" title="Bobigny, France"></gmp-advanced-marker>
+                
+                <!-- Marqueur à Lieusaint -->
+                <gmp-advanced-marker position="48.6017,2.6077" title="Lieusaint, France"></gmp-advanced-marker>
+            </gmp-map>
         </div>
     </div>
 </section>

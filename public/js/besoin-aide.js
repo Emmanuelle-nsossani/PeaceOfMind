@@ -34,11 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function (event) {
             event.preventDefault();
             mapOverlay.style.display = "flex";
-            // initMap(); // Charge la carte quand l'overlay s'affiche
+            document.body.classList.add("no-scroll"); // Bloque le scroll
         });
     });
 
     closeMap.addEventListener("click", function () {
         mapOverlay.style.display = "none";
+        document.body.classList.remove("no-scroll"); // Rétablit le scroll
     });
 });
