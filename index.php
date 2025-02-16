@@ -5,6 +5,11 @@ require_once 'autoload.php';
 // require_once 'config.php'; A metttre apres création db
 // require_once 'app/model/database.php'; A metttre apres création db
 
+require __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 $page = 'accueil';
 if (!empty($_GET['page'])) {
     $page = $_GET['page'];

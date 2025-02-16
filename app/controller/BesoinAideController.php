@@ -25,6 +25,7 @@ class BesoinAideController extends Controller
             'scripts' => ['carte.js','besoin-aide.js'],
             'view' => 'app/view/besoin-aide.view.php',
             'layout' => 'app/view/common/layout.php',
+            'apiKey' => getenv('GOOGLE_API_KEY'),
         ];
 
         $this->genererPage($data);

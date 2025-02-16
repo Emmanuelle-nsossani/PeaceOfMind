@@ -127,15 +127,14 @@
         </div>
     </div>
 </footer>
-
-
+<?php var_dump(getenv('GOOGLE_API_KEY'));?>
 <?php if (isset($scripts)) : ?>
     <?php foreach ($scripts as $script) : ?>
         <script src="public/js/<?= $script ?>"></script>
     <?php endforeach ?>
 <?php endif ?>
 <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPBHYSB_pR2ZgKCBWWOBd9Vk2iMSflzXg&libraries=maps,marker&v=beta"
+    src="https://maps.googleapis.com/maps/api/js?key=<?=$apiKey?>&libraries=maps,marker&v=beta"
     defer></script>
 </body>
 
