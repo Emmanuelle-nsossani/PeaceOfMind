@@ -4,3 +4,6 @@
 
 # Ignorer les fichiers de Composer
 composer.lock
+
+# Ma page de configuration
+config.php

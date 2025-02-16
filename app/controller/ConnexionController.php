@@ -1,8 +1,8 @@
 <?php
 
-//le controller sert à charger les différentes données
-
 namespace app\controller;
+
+use app\model\Connexion;
 
 /**
  * Contrôleur responsable de la gestion de la page d'accueil de l'application.
@@ -19,6 +19,7 @@ class ConnexionController extends Controller
     {
         // Données nécessaires à la génération de la page
         $data = [
+            // 'utilisateur' => new Connexion(),
             'page_title' => "J'ai besoin d'aide",
             'css' => 'connexion.css',
             'fontAwesome' => true,
