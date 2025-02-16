@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextq1 = document.getElementById("next-q1");
     const nextq2 = document.getElementById("next-q2");
     const nextq3 = document.getElementById("next-q3");
+    const nextq4 = document.getElementById("next-q4");
     // MAP
     const mapOverlay = document.getElementById("map");
     const closeMap = document.getElementById("close-map");
@@ -28,6 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Empêche la redirection de la page
         question3.classList.add("question-hidden");
         question4.classList.remove("question-hidden");
+    });
+
+    // Lien vers la page article 
+    const lienArticle = document.getElementById("link-article");
+    lienArticle.addEventListener("click", function (event) {
+        event.preventDefault(); // Empêche la redirection de la page
+        window.location = "http://localhost/sae302/index.php?page=connexion";
     });
 
     buttonsAfficherMap.forEach(button => {

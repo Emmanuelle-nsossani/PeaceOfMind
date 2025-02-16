@@ -79,7 +79,7 @@
             </div>
             <div class="question-hidden" id="question4">
                 <div class="titre-question">
-                    <p>Je préfère lire des informations, des conseils ou des témignages avant de contacter un professionnel ?</p>
+                    <p>Je préfère lire des informations, des conseils ou des témoignages avant de contacter un professionnel ?</p>
                 </div>
                 <div class="proposition">
                     <button class="button" id="link-article">
@@ -90,7 +90,7 @@
                             <p>Oui</p>
                         </div>
                     </button>
-                    <button class="button afiicher-map">
+                    <button class="button afficher-map">
                         <div>
                             <p>B</p>
                         </div>
@@ -105,7 +105,9 @@
 </main>
 <section id="map">
     <div id="map-container">
-        <button id="close-map">Fermer</button>
+        <button id="close-map">
+            <img src="public/images/croix.png" alt="">
+        </button>
         <div id="carte">
             <gmp-map center="48.8566,2.3522" zoom="10" map-id="DEMO_MAP_ID" style="height: 1000px">
                 <!-- Marqueur à Bobigny -->
