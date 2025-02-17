@@ -39,7 +39,7 @@ class Connexion
         ];
 
         $this->utilisateurs = [];
-        $this->getCatalogue();
+        // $this->getCatalogue();
     }
 
     /**
