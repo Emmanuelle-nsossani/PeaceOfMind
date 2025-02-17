@@ -19,7 +19,7 @@ class ConnexionController extends Controller
     {
         // Données nécessaires à la génération de la page
         $data = [
-            // 'utilisateur' => new Connexion(),
+            'utilisateur' => new Connexion(),
             'page_title' => "J'ai besoin d'aide",
             'css' => 'connexion.css',
             'fontAwesome' => true,
