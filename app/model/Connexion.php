@@ -2,29 +2,25 @@
 
 namespace app\model;
 
-
 /**
- * Représente une bière et ses propriétés associées, ainsi que les méthodes pour récupérer
- * les informations depuis la base de données et hydrater l'objet.
+ * Représente un utilisateur avec ses propriétés et méthodes pour accéder aux données.
  *
  * @package app\model
  */
 class Connexion
 {
-
     private array $structure;
     private array $utilisateurs;
 
-    private int $id;
-    private string $username;
-    private string $password;
-    private string $mail;
-    private string $nom;
-    private string $prenom;
-
+    private int $id = 0; // Initialisation de $id à 0
+    private string $username = ''; // Initialisation de $username à une chaîne vide
+    private string $password = ''; // Initialisation de $password à une chaîne vide
+    private string $mail = ''; // Initialisation de $mail à une chaîne vide
+    private string $nom = ''; // Initialisation de $nom à une chaîne vide
+    private string $prenom = ''; // Initialisation de $prenom à une chaîne vide
 
     /** 
-     * Constructeur de la classe Biere
+     * Constructeur de la classe
      * Initialise la structure pour le mapping entre la base de données et les propriétés de l'objet.
      */
     public function __construct()
@@ -39,37 +35,56 @@ class Connexion
         ];
 
         $this->utilisateurs = [];
-        // $this->getCatalogue();
     }
 
     /**
-     * Récupère les utilisateurs depuis la base de données et les hydrate
+     * Récupère tous les utilisateurs de la base de données.
      *
-     * @return void
+     * @return array Tableau d'objets Connexion
      */
-    private function getCatalogue()
+    public static function getAllUsers(): array
     {
         $db = Database::getInstance()->getConnection();
 
         $sql = 'SELECT * FROM utilisateur';
         $stmt = $db->query($sql);
+        $users = [];
 
         while ($data = $stmt->fetch()) {
-            $utilisateur = new Connexion();
-            $utilisateur->hydrate($data);
-            $this->utilisateurs[] = $utilisateur;
+            $user = new Connexion();
+            $user->hydrate($data);  // Hydrate l'objet avec les données
+            $users[] = $user;
         }
+
+        return $users;
     }
 
-    /**
-     * Récupère l'ensemble des utilisateurs de la db
-     *
-     * @return array tableau des utilisateurs
-     */
-    public function getUtilisateurs() {
-        return $this->utilisateurs;
+    // Méthodes pour définir les propriétés (setters)
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
     }
 
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    public function setUsername($username)
+    {
+        $this->username = $username;
+    }
+
+    public function setMail($mail)
+    {
+        $this->mail = $mail;
+    }
+
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    
+    }
     /**
      * Retourne l'id de l'utilisateur
      *
@@ -91,9 +106,9 @@ class Connexion
     }
 
     /**
-     * Retourne le pwd de l'utilisaateur
+     * Retourne le mot de passe de l'utilisateur
      *
-     * @return string Passsword de l'utilisateur
+     * @return string Mot de passe de l'utilisateur
      */
     public function getPassword(): string
     {
@@ -103,7 +118,7 @@ class Connexion
     /**
      * Retourne le mail de l'utilisateur
      *
-     * @return string mail de l'utilisateur
+     * @return string Email de l'utilisateur
      */
     public function getMail(): string
     {
@@ -131,17 +146,16 @@ class Connexion
     }
 
     /**
-     * Récupère les informations stockées en base de données concernant l'utilisateur 
-     * l'id est passée en paramètre et hydrate l'objet.
-     * 
-     * @param int $id Identifiant de l'utilisateur.
-     * @return Utilisateur|null Objet Utilisateur hydraté ou null si l'enregistrement n'est pas trouvé.
+     * Récupère les informations d'un utilisateur par son ID.
+     *
+     * @param int $ref Identifiant de l'utilisateur
+     * @return Connexion|null Objet Connexion ou null si non trouvé
      */
     public static function findById($ref)
     {
         $db = Database::getInstance()->getConnection();
 
-        $query = "SELECT * FROM utilisaateur WHERE id = :id";
+        $query = "SELECT * FROM utilisateur WHERE id = :id";
         $stmt = $db->prepare($query);
         $stmt->bindParam(':id', $ref);
         $stmt->execute();
@@ -153,19 +167,51 @@ class Connexion
             $utilisateur->hydrate($data);
             return $utilisateur;
         } else {
-            return null; // Retourne null si l'enregistrement n'est pas trouvé
+            return null; // Aucun utilisateur trouvé
         }
+    }
+
+    public function save()
+    {
+        $db = Database::getInstance()->getConnection();
+
+        // Préparer la requête d'insertion
+        $query = "INSERT INTO utilisateur (prenom, nom, username, mail, password) 
+                  VALUES (:prenom, :nom, :username, :mail, :password)";
+        $stmt = $db->prepare($query);
+
+        // Lier les paramètres
+        $stmt->bindParam(':prenom', $this->prenom);
+        $stmt->bindParam(':nom', $this->nom);
+        $stmt->bindParam(':username', $this->username);
+        $stmt->bindParam(':mail', $this->mail);
+        $stmt->bindParam(':password', $this->password);
+
+        // Exécuter la requête
+        $stmt->execute();
+    }
+
+    /**
+     * Vérifie si l'email existe déjà dans la base de données.
+     */
+    public static function emailExiste($email)
+    {
+        $db = Database::getInstance()->getConnection();
+        $query = "SELECT COUNT(*) FROM utilisateur WHERE mail = :mail";
+        $stmt = $db->prepare($query);
+        $stmt->bindParam(':mail', $email);
+        $stmt->execute();
+
+        return $stmt->fetchColumn() > 0;
     }
 
     /**
      * Hydrate les propriétés de l'objet à partir d'un tableau associatif.
      *
-     * @param array $data Tableau associatif contenant les données à utiliser pour hydrater l'objet.
-     * @return void
+     * @param array $data Tableau associatif contenant les données
      */
     public function hydrate($data)
     {
-        // Méthode pour remplir les propriétés de l'objet à partir d'un tableau associatif
         foreach ($this->structure as $key => $id) {
             if (isset($data[$id])) {
                 $this->$key = $data[$id];
