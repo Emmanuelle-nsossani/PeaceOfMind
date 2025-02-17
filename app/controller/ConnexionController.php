@@ -28,6 +28,20 @@ class ConnexionController extends Controller
     }
 
     /**
+     * Méthode pour connecter un utilisateur 
+     */
+
+    //  Etape 1
+    // Verifier les diiférentes informations
+
+    // Etape 2
+    // Ouvrir un session à l'utilisateur
+
+    //faire un bouton de déconndxion
+
+    //verifier si l'utilisateur peut ecrire un article
+
+    /**
      * Méthode pour ajouter un utilisateur à la base de données.
      */
     public function ajouterUtilisateur()

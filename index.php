@@ -14,9 +14,6 @@ require __DIR__ . '/vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-// var_dump($prenom);
-var_dump($_POST);
-
 $page = 'accueil';
 if (!empty($_GET['page'])) {
     $page = $_GET['page'];
@@ -38,6 +35,10 @@ try {
             $besoinAideController->genererPageConnexion();
             break;
         case 'send-inscription':
+            $besoinAideController = new app\controller\ConnexionController();
+            $besoinAideController->ajouterUtilisateur();
+            break;
+        case 'send-connection':
             $besoinAideController = new app\controller\ConnexionController();
             $besoinAideController->ajouterUtilisateur();
             break;

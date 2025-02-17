@@ -1,12 +1,3 @@
-<?php foreach ($utilisateurs as $user): ?>
-    <tr>
-        <td><?= htmlspecialchars($user->getId()) ?></td>
-        <td><?= htmlspecialchars($user->getNom()) ?></td>
-        <td><?= htmlspecialchars($user->getPrenom()) ?></td>
-        <td><?= htmlspecialchars($user->getMail()) ?></td>
-        <td><?= htmlspecialchars($user->getUsername()) ?></td>
-    </tr>
-<?php endforeach; ?>
 <main id="connexion">
     <section id="banniere">
         <img src="public\images\titre noir POM.png" alt="">
