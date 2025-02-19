@@ -7,19 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // Fonction pour fermer le menu
   function closeMenu() {
     menuToggle.classList.remove("active");
-    navMenu.style.display = "none"; // Cache le menu
+    navMenu.classList.remove("active"); // On enlève aussi la classe active pour la transition
   }
 
   // Fonction pour ouvrir le menu
   function openMenu() {
     menuToggle.classList.add("active");
-    navMenu.style.display = "block"; // Affiche le menu
+    navMenu.classList.add("active"); // On ajoute la classe active pour la transition
   }
 
   // Toggle du menu principal
   menuToggle.addEventListener("click", function (event) {
-    event.stopPropagation(); // Empêche la fermeture immédiate
-    if (navMenu.style.display === "block") {
+    event.stopPropagation();
+    if (navMenu.classList.contains("active")) {
       closeMenu();
     } else {
       openMenu();
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Toggle du sous-menu "Interagir avec nous"
   interagirLabel.addEventListener("click", function (event) {
     event.preventDefault();
-    event.stopPropagation(); // Empêche la fermeture du menu au clic sur "Interagir avec nous"
+    event.stopPropagation(); // Empêche la fermeture du menu
 
     if (sousMenu.classList.contains("active")) {
       sousMenu.style.maxHeight = "0px";
