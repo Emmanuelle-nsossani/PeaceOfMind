@@ -71,7 +71,7 @@
                         </label>
                     </a></li>
                 <div id="sous-li">
-                    <li><a href="index.php?page=faq">
+                    <li><a href="index.php?page=blog">
                             <label for="menuCheckbox" onclick="this.parentNode.click();">- Blog et témoignages</label>
                         </a></li>
                     <li><a href="index.php?page=faq">

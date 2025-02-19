@@ -50,6 +50,14 @@ try {
             $faqController = new app\controller\FAQController();
             $faqController->genererPageFAQ();
             break;
+        case 'blog':
+            $blogController = new app\controller\BlogController();
+            $blogController->genererPageBlog();
+            break;
+        case 'article1':
+            $articleController = new app\controller\Article1Controller();
+            $articleController->genererPageArticle1();
+            break;
         default:
             throw new Exception("Page inconnue : {$page}");
     }
