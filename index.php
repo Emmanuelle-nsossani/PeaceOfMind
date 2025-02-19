@@ -46,6 +46,10 @@ try {
             $quiSommesNousController = new app\controller\QuiSommesNousController();
             $quiSommesNousController->genererPageQuiSommesNous();
             break;
+        case 'faq':
+            $faqController = new app\controller\FAQController();
+            $faqController->genererPageFAQ();
+            break;
         default:
             throw new Exception("Page inconnue : {$page}");
     }
