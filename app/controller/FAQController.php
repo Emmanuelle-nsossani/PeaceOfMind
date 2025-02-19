@@ -22,7 +22,7 @@ class FAQController extends Controller
             'page_title' => "FAQ",
             'css' => 'faq.css',
             'fontAwesome' => true,
-            'scripts' => ['faq.js'],
+            'scripts' => ['header.js','faq.js'],
             'view' => 'app/view/faq.view.php',
             'layout' => 'app/view/common/layout.php',
             'questions' => $questionsParCategorie

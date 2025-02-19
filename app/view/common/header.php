@@ -66,12 +66,25 @@
                         <label for="menuCheckbox" onclick="this.parentNode.click();">J'ai besoin d'aide</label>
                     </a></li>
                 <li><a href="#">
-                        <label for="menuCheckbox" onclick="this.parentNode.click();">Intéragir avec nous</label>
+                        <label id="menu-interagir" for="menuCheckbox">
+                            <p>Intéragir avec nous</p><img src="public/images/fleche-vers-le-bas.png" alt="">
+                        </label>
                     </a></li>
+                <div id="sous-li">
+                    <li><a href="index.php?page=faq">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">- Blog et témoignages</label>
+                        </a></li>
+                    <li><a href="index.php?page=faq">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">- Forum</label>
+                        </a></li>
+                    <li><a href="index.php?page=faq">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">- Nous contacter</label>
+                        </a></li>
+                </div>
                 <li><a href="index.php?page=faq">
                         <label for="menuCheckbox" onclick="this.parentNode.click();">Foire Aux Questions</label>
                     </a></li>
-                <li><a href="index.php?page=qui-sommes-nous">
+                <li id="last-li"><a href="index.php?page=qui-sommes-nous">
                         <label for="menuCheckbox" onclick="this.parentNode.click();">Qui sommes nous ?</label>
                     </a></li>
             </ul>

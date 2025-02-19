@@ -237,6 +237,19 @@ body {
 /* RESPONSIVE MOBILE */
 
 @media (max-width: 480px) {
+    
+    #menu-interagir {
+        display: flex;
+        align-items: center;
+    }
+
+    #menu-interagir img {
+        width: 30px;
+    }
+
+    #sous-li li a {
+        color: var(--bleu-fonce);
+    }
 
     body {
         background-image: url(../images/mobile/main-bg.png);
@@ -288,14 +301,14 @@ body {
 
     }
 
-    nav li:nth-child(4) {
+    #last-li {
         border-bottom-right-radius: 100px;
         border-bottom-left-radius: 100px;
         -webkit-box-shadow: 0px 10px 13px -7px #2c2c2c, 0px 14px 36px -14px rgba(0, 0, 0, 0);
         box-shadow: 0px 10px 13px -7px #2c2c2c, 0px 14px 36px -14px rgba(0, 0, 0, 0);
     }
 
-    nav a {
+    nav a, nav p {
         color: black;
         font-size: 18px;
         font-family: var(--font-main);

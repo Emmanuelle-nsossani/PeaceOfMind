@@ -17,13 +17,13 @@ class ConnexionController extends Controller
     private function genererData($view, $utilisateurs = [])
     {
         return [
-            'utilisateurs' => $utilisateurs,  // Passer les utilisateurs à la vue
-            'page_title' => "J'ai besoin d'aide",  // Titre de la page par défaut
-            'css' => 'connexion.css',  // Fichier CSS par défaut
-            'fontAwesome' => true,  // Inclure Font Awesome
-            'scripts' => ['carte.js', 'connexion.js'],  // Scripts par défaut
-            'view' => $view,  // Vue spécifique à inclure
-            'layout' => 'app/view/common/layout.php',  // Layout commun
+            'utilisateurs' => $utilisateurs,  
+            'page_title' => "J'ai besoin d'aide",  
+            'css' => 'connexion.css', 
+            'fontAwesome' => true,  
+            'scripts' => ['header.js', 'connexion.js'],  
+            'view' => $view,  
+            'layout' => 'app/view/common/layout.php', 
         ];
     }
 
