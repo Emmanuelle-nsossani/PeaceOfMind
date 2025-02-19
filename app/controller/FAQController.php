@@ -1,23 +1,23 @@
 <?php
 
-//le controller sert à charger les différentes données
-
 namespace app\controller;
 
-/**
- * Contrôleur responsable de la gestion de la page d'accueil de l'application.
- *
- * @package app\controller
- */
+use app\model\FAQ;
 
+/**
+ * Contrôleur responsable de la gestion de la FAQ.
+ */
 class FAQController extends Controller
 {
     /**
-     * Génère la page d'accueil.
+     * Génère la page de la FAQ.
      */
-    public function genererPageFAQ()
+    public function genererPageFAQ(): void
     {
-        // Données nécessaires à la génération de la page
+        // Récupérer toutes les questions classées par catégorie
+        $questionsParCategorie = FAQ::getAllQuestions();
+
+        // Préparer les données à transmettre à la vue
         $data = [
             'page_title' => "FAQ",
             'css' => 'faq.css',
@@ -25,9 +25,10 @@ class FAQController extends Controller
             'scripts' => ['faq.js'],
             'view' => 'app/view/faq.view.php',
             'layout' => 'app/view/common/layout.php',
+            'questions' => $questionsParCategorie
         ];
 
+        // Générer la page avec les données fournies
         $this->genererPage($data);
-
     }
 }

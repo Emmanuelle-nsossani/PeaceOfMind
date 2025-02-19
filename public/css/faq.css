@@ -575,10 +575,17 @@ body {
         margin-bottom: 15px;
     }
 
-    #container-question {
+    .container-question {
         border: 1px solid var(--bleu);
         border-radius: 11px;
 
+    }
+
+    .question-categorie {
+        margin-bottom: 20px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     .question {
