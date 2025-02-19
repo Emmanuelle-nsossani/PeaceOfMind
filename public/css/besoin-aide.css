@@ -366,10 +366,17 @@ body {
             opacity 0.55s ease;
     }
 
-    .menu {
-        display: none;
+    #menu {
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.3s ease-in;
+        /* Transition sur max-height */
     }
 
+    #menu.active {
+        padding-bottom: 30px;
+        max-height: 700px;
+    }
     #menuToggle.active #span span:nth-child(1) {
         transform: rotate(45deg);
         position: relative;

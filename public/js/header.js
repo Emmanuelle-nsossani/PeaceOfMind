@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navMenu = document.getElementById("menu");
   const interagirLabel = document.getElementById("menu-interagir");
   const sousMenu = document.getElementById("sous-li");
+  const fleche = document.getElementById("fleche-menu-interagir");
 
   // Fonction pour fermer le menu
   function closeMenu() {
@@ -33,9 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (sousMenu.classList.contains("active")) {
       sousMenu.style.maxHeight = "0px";
+      fleche.style.transform = "rotateX(0)";
       setTimeout(() => sousMenu.classList.remove("active"), 300);
     } else {
       sousMenu.classList.add("active");
+      fleche.style.transform = "rotateX(180deg)";
       sousMenu.style.maxHeight = sousMenu.scrollHeight + "px";
     }
   });

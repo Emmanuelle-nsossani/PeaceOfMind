@@ -67,7 +67,7 @@
                     </a></li>
                 <li><a href="#">
                         <label id="menu-interagir" for="menuCheckbox">
-                            <p>Intéragir avec nous</p><img src="public/images/fleche-vers-le-bas.png" alt="">
+                            <p>Intéragir avec nous</p><img id="fleche-menu-interagir" src="public/images/fleche-vers-le-bas.png" alt="">
                         </label>
                     </a></li>
                 <div id="sous-li">
