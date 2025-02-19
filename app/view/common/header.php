@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <div id="overlay"></div>
     <header id="header-desktop">
         <div id="bandeau-header">
             <div class="container-logo">
