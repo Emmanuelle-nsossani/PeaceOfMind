@@ -771,12 +771,6 @@ body {
         color: var(--bleu-fonce);
     }
 
-    /* Effet de flou sur la page quand le menu est ouvert */
-    .blurred {
-        filter: blur(5px);
-        transition: filter 0.3s ease-in-out;
-    }
-
     /* Transition fluide pour le sous-menu */
     #sous-li {
         max-height: 0px;

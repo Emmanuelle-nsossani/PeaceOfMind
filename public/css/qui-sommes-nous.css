@@ -251,6 +251,18 @@ body {
         color: var(--bleu-fonce);
     }
 
+     /* Transition fluide pour le sous-menu */
+     #sous-li {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    #sous-li.active {
+        max-height: 500px;
+        /* Ajustable selon ton contenu */
+    }
+
     body {
         background-image: url(../images/mobile/main-bg.png);
     }
