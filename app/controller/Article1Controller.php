@@ -19,7 +19,7 @@ class Article1Controller extends Controller
     {
         // Données nécessaires à la génération de la page
         $data = [
-            'page_title' => 'Article | POM',
+            'page_title' => 'Article',
             'css' => 'blog.css',
             'fontAwesome' => true,
             'scripts' => ['blog.js','header.js'],

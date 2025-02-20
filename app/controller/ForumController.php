@@ -10,20 +10,20 @@ namespace app\controller;
  * @package app\controller
  */
 
-class Article3Controller extends Controller
+class ForumController extends Controller
 {
     /**
      * Génère la page d'accueil.
      */
-    public function genererPageArticle3()
+    public function genererPageForum()
     {
         // Données nécessaires à la génération de la page
         $data = [
-            'page_title' => 'Article',
-            'css' => 'blog.css',
+            'page_title' => 'Forum',
+            'css' => 'forum.css',
             'fontAwesome' => true,
-            'scripts' => ['blog.js','header.js'],
-            'view' => 'app/view/article3.view.php',
+            'scripts' => ['header.js'],
+            'view' => 'app/view/forum.view.php',
             'layout' => 'app/view/common/layout.php',
         ];
 

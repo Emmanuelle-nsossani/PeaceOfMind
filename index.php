@@ -66,6 +66,10 @@ try {
             $articleController = new app\controller\Article3Controller();
             $articleController->genererPageArticle3();
             break;
+        case 'forum':
+            $forumController = new app\controller\ForumController();
+            $forumController->genererPageForum();
+            break;
         default:
             throw new Exception("Page inconnue : {$page}");
     }
