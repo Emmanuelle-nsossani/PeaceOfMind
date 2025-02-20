@@ -1,9 +1,15 @@
 <main id="blog">
     <div id="intro">
         <h1>PeaceInRead</h1>
+        <div id="blog-header">
+            <ul>
+                <li id="li-un" class="active">Articles</li>
+                <li id="li-deux">Témoignage</li>
+            </ul>
+        </div>
     </div>
 
-    <div id="articles">
+    <div class="active-page" id="articles">
         <div class="article-container">
             <div>
                 <div class="container-img-art">
@@ -19,9 +25,11 @@
 
                     La santé mentale désigne la santé psychologique d’une personne, soit son bien être. Ce n’est pas quelque chose de figé, plutôt une évolution perpétuelle de notre cerveau, en recherche d’un équilibre psychique, en fonction de nos expériences ...</p>
             </div>
-            <div id="link-article1" class="button-article">
-                <button type="submit" class="button">Allez lire</button>
-            </div>
+            <form action="index.php?page=article1" method="post">
+                <div class="button-article">
+                    <button type="submit" class="button">Allez lire</button>
+                </div>
+            </form>
         </div>
         <div class="article-container">
             <div>
@@ -36,9 +44,11 @@
 
                     Les troubles mentaux sont de plus en plus fréquents chez les personnes. Même si c’est quelque chose de difficile à percevoir, ils sont bel et bien présents dans notre société...</p>
             </div>
-            <div id="link-article2" class="button-article">
-                <button class="button">Allez lire</button>
-            </div>
+            <form action="index.php?page=article2" method="post">
+                <div class="button-article">
+                    <button type="submit" class="button">Allez lire</button>
+                </div>
+            </form>
         </div>
         <div class="article-container">
             <div>
@@ -51,9 +61,23 @@
                 <p>Guide pour une meilleure routine de sommeil.</p>
                 <p>Dans une société où l’on s’ennuie de moins en moins, le sommeil est pour beaucoup malheureusement considéré comme une perte de temps.Le sommeil influe pourtant énormément sur notre quotidien,  qui va jusqu'à changer notre humeur et peut avoir de graves conséquences sur notre santé mentale.</p>
             </div>
-            <div id="link-article3" class="button-article">
-                <button class="button">Allez lire</button>
-            </div>
+            <form action="index.php?page=article3" method="post">
+                <div class="button-article">
+                    <button type="submit" class="button">Allez lire</button>
+                </div>
+            </form>
         </div>
+    </div>
+    <div id="temoignage">
+        <p id="auteur-temoignage">Malika</p>
+        <p id="titre-temoignage">Du burn out à bénévole chez POM</p>
+        <p id="text-temoignage">Du burn-out à bénévole chez Peace of Mind Témoignage de Malika, étudiante en médecine qui n’avait plus espoir en la vie. J’ai sombré dans un cercle vicieux de stress, d’auto-dévalorisation et d’isolement. <br>
+            Un jour, je suis tombée sur une publication de Peace of Mind. Leur message me parlait directement. En les contactant, j’ai découvert un véritable espace de soutien. Ils m’ont mise en relation avec un professionnel de santé qui m’a écoutée sans jugement et m’a aidée à comprendre mes émotions. Mais ce qui m’a le plus aidée, c’est de pouvoir échanger avec d’autres étudiants dans la même situation. Partager nos expériences, nos peurs et nos progrès m’a permis de me sentir moins seule et plus forte.
+            Avec leur accompagnement, j’ai appris à réorganiser mon quotidien, à intégrer des moments de pause sans culpabilité et à retrouver un équilibre entre mes études et ma santé mentale. Peace of Mind ne m’a pas seulement aidée à traverser cette période difficile, ils m’ont donné les clés pour avancer par moi-même. <br>
+            Aujourd’hui, diplômée, je suis bénévole chez Peace of Mind. J’accompagne d’autres étudiants, car je sais que trouver une oreille attentive ou simplement rencontrer des personnes qui partagent les mêmes défis peut transformer une vie. <br>
+            Un jour, je suis tombée sur une publication de Peace of Mind. Leur message me parlait directement. En les contactant, j’ai découvert un véritable espace de soutien. Ils m’ont mise en relation avec un professionnel de santé qui m’a écoutée sans jugement et m’a aidée à comprendre mes émotions. Mais ce qui m’a le plus aidée, c’est de pouvoir échanger avec d’autres étudiants dans la même situation. Partager nos expériences, nos peurs et nos progrès m’a permis de me sentir moins seule et plus forte.
+            Avec leur accompagnement, j’ai appris à réorganiser mon quotidien, à intégrer des moments de pause sans culpabilité et à retrouver un équilibre entre mes études et ma santé mentale. Peace of Mind ne m’a pas seulement aidée à traverser cette période difficile, ils m’ont donné les clés pour avancer par moi-même. <br>
+            Aujourd’hui, diplômée, je suis bénévole chez Peace of Mind. J’accompagne d’autres étudiants, car je sais que trouver une oreille attentive ou simplement rencontrer des personnes qui partagent les mêmes défis peut transformer une vie.
+        </p>
     </div>
 </main>

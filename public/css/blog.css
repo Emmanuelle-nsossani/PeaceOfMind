@@ -144,7 +144,7 @@ body {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
 
-    
+
     /* FOOTER */
 
 
@@ -796,7 +796,8 @@ body {
         font-size: 30px;
     }
 
-    #article-container p, #article-container li b {
+    #article-container p,
+    #article-container li b {
         text-align: justify;
         font-family: var(--font-main);
         font-size: 16px;
@@ -815,6 +816,7 @@ body {
 
     #article-thumb {
         width: 80%;
+        margin-bottom: 20px;
     }
 
     h2 {
@@ -839,4 +841,63 @@ body {
         text-align: center;
         justify-content: center;
     }
+
+    #blog-header {
+        width: 100%;
+    }
+
+    #blog-header ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        font-family: var(--font-main);
+    }
+
+    #blog-header li {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all-color 0.3s ease-in-out, all 0.3s ease-in-out;
+    }
+
+    #blog-header li.active {
+        background-color: #faafbd35;
+        height: 40px;
+        width: 40%;
+        border-bottom: 3px solid var(--jaune);
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    }
+
+    #temoignage {
+        margin: 30px 0;
+    }
+
+    #auteur-temoignage {
+        font-weight: bold;
+        color: var(--bleu-fonce);
+    }
+
+    #titre-temoignage {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    #articles {
+        display: none;
+    }
+
+    #temoignage {
+        display: none;
+    }
+
+    #temoignage.active-page {
+        display: block;
+    }
+
+    #articles.active-page {
+        display: block;
+    }
+
 }

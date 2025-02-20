@@ -58,6 +58,14 @@ try {
             $articleController = new app\controller\Article1Controller();
             $articleController->genererPageArticle1();
             break;
+        case 'article2':
+            $articleController = new app\controller\Article2Controller();
+            $articleController->genererPageArticle2();
+            break;
+        case 'article3':
+            $articleController = new app\controller\Article3Controller();
+            $articleController->genererPageArticle3();
+            break;
         default:
             throw new Exception("Page inconnue : {$page}");
     }

@@ -23,7 +23,7 @@ class Article2Controller extends Controller
             'css' => 'blog.css',
             'fontAwesome' => true,
             'scripts' => ['blog.js','header.js'],
-            'view' => 'app/view/blog.view.php',
+            'view' => 'app/view/article2.view.php',
             'layout' => 'app/view/common/layout.php',
         ];
 

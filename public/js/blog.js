@@ -1,20 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Lien vers les articles entier 
-    const article1 = document.getElementById("link-article1");
-    article1.addEventListener("click", function (event) {
-        event.preventDefault(); // Empêche la redirection de la page
-        window.location = "index.php?page=article1";
-    });
+    const liUn = document.getElementById("li-un");
+    const liDeux = document.getElementById("li-deux");
+  
+    const article = document.getElementById("articles");
+    const temoignage = document.getElementById("temoignage");
 
-    const article2 = document.getElementById("link-article2");
-    article1.addEventListener("click", function (event) {
-        event.preventDefault(); // Empêche la redirection de la page
-        window.location = "index.php?page=article2";
-    });
+    function toggleActive() {
+      if (!this.classList.contains("active")) {
+        liUn.classList.toggle("active");
+        liDeux.classList.toggle("active");
+        article.classList.toggle("active-page");
+        temoignage.classList.toggle("active-page");
+      }
+    }
+  
+    liUn.addEventListener("click", toggleActive);
+    liDeux.addEventListener("click", toggleActive);
 
-    const article3 = document.getElementById("link-article3");
-    article1.addEventListener("click", function (event) {
-        event.preventDefault(); // Empêche la redirection de la page
-        window.location = "index.php?page=article3";
-    });
-});
+
+    
+  });
+  
