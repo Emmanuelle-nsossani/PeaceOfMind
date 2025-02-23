@@ -23,7 +23,7 @@ class TestController extends Controller
             'css' => 'test.css',
             'fontAwesome' => true,
             'scripts' => ['test.js','header.js'],
-            'view' => 'app/view/accueil.view.php',
+            'view' => 'app/view/test.view.php',
             'layout' => 'app/view/common/layout.php',
         ];
 
