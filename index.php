@@ -70,6 +70,10 @@ try {
             $forumController = new app\controller\ForumController();
             $forumController->genererPageForum();
             break;
+        case 'test':
+            $testController = new app\controller\TestController();
+            $testController->genererPageTest();
+            break;
         default:
             throw new Exception("Page inconnue : {$page}");
     }

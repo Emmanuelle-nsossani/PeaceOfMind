@@ -1174,8 +1174,8 @@ body {
         margin: 0 30px;
     }
 
-    #button-container button {
-        width: 45%;
+    #button-container form button {
+        width: 100%;
         justify-content: space-evenly;
         color: black;
 
@@ -1189,11 +1189,11 @@ body {
         font-size: 70%;
     }
 
-    #button-container button:nth-child(1) {
+    #button-faq {
         background-color: var(--jaune);
     }
 
-    #button-container button:nth-child(2) {
+    #button-forum {
         background-color: var(--bleu);
     }
 
@@ -1388,6 +1388,10 @@ body {
         display: flex;
     }
 
+    #button-article form {
+        margin: auto;
+    }
+
     /* FORUM  */
 
     #message {
@@ -1424,7 +1428,13 @@ body {
 
     #message-jaune {
         margin-left: 40%;
+    }
+
+    #message-jaune a {
+        position: absolute;
         font-weight: bold;
+        text-decoration: none;
+        color: black;
     }
 
     /* TEMOINGNAGES */

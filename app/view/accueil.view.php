@@ -40,14 +40,19 @@
 
         </div>
         <div id="button-container">
-            <button class="button">
-                <img src="public\images\souris.png" alt="souris">
-                <p>Je me renseigne</p>
-            </button>
-            <button class="button">
-                <img src="public\images\tel.png" alt="tel">
-                <p>Je veux en parler</p>
-            </button>
+            <form action="index.php?page=faq" method="post">
+                <button id="button-faq" class="button" type="submit">
+                    <img src="public\images\souris.png" alt="souris">
+                    <p>Je me renseigne</p>
+                </button>
+            </form>
+            <form action="index.php?page=forum" method="post">
+                <button id="button-forum" class="button" type="submit">
+                    <img src="public\images\tel.png" alt="tel">
+                    <p>Je veux en parler</p>
+                </button>
+            </form>
+
         </div>
     </section>
     <section id="saviez-vous">
@@ -161,7 +166,9 @@
                     La santé mentale désigne la santé psychologique d’une personne, soit son bien être. Ce n’est pas quelque chose de figé, plutôt une évolution perpétuelle de notre cerveau, en recherche d’un équilibre psychique, en fonction de nos expériences ...</p>
             </div>
             <div id="button-article">
-                <button class="button">Lire la suite</button>
+                <form action="index.php?page=article1" method="post">
+                    <button class="button">Lire la suite</button>
+                </form>
             </div>
         </div>
         <div class="article-container-desktop">
@@ -203,7 +210,9 @@
             </div>
             <div id="message-jaune">
                 <img src="public\images\message-jaune.svg" alt="bulle de message">
-                <p>Je découvre le Forum</p>
+                <a href="index.php?page=forum">
+                    <p>Je découvre le Forum</p>
+                </a>
             </div>
         </div>
     </section>
@@ -216,19 +225,19 @@
         </div>
         <div id="temoignages-container">
             <div class="bold">
-                < </div>
-                    <div id="temoignage-container">
-                        <div id="identite">
-                            <img src="public\images\malika.png" alt="Malika">
-                            <p>Malika</p>
-                        </div>
-                        <div id="text-temoignage">
-                            <p>Du burn out à bénévole chez POM</p>
-                            <p>Du burn-out à bénévole chez Peace of Mind Témoignage de Malika, étudiante en médecine qui n’avait plus espoir en la vie. J’ai sombré dans un cercle vicieux de stress, d’auto-dévalorisation et d’ <a href="">Lire Plus</a></p>
-                        </div>
-                    </div>
-                    <div class="bold">></div>
             </div>
+            <div id="temoignage-container">
+                <div id="identite">
+                    <img src="public\images\malika.png" alt="Malika">
+                    <p>Malika</p>
+                </div>
+                <div id="text-temoignage">
+                    <p>Du burn out à bénévole chez POM</p>
+                    <p>Du burn-out à bénévole chez Peace of Mind Témoignage de Malika, étudiante en médecine qui n’avait plus espoir en la vie. J’ai sombré dans un cercle vicieux de stress, d’auto-dévalorisation et d’ <a href="index.php?page=blog">Lire Plus</a></p>
+                </div>
+            </div>
+            <div class="bold"></div>
+        </div>
         </div>
         <img id="soutien-img" src="public\images\soutien-illus.svg" alt="soutien illus">
     </section>
