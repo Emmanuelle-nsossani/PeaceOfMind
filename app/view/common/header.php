@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/global.css">
     <?php if (!empty($css)): ?>
         <link rel="stylesheet" href="public/css/<?= $css ?>">
     <?php endif ?>
@@ -22,10 +23,12 @@
 <body>
     <header id="header-desktop">
         <div id="bandeau-header">
-            <div class="container-logo">
-                <img class="logo" src="public\images\logo.png" alt="logo Peace of Mind">
-                <img class="logo-titre" src="public\images\titre noir POM.png" alt="Peace of Mind">
-            </div>
+            <a href="index.php">
+                <div class="container-logo">
+                    <img class="logo" src="public\images\logo.png" alt="logo Peace of Mind">
+                    <img class="logo-titre" src="public\images\titre noir POM.png" alt="Peace of Mind">
+                </div>
+            </a>
             <div id="container-slogan">
                 <p id="slogan">L'espoir d'un nouveau départ</p>
             </div>
@@ -36,7 +39,7 @@
         <nav>
             <ul>
                 <li><a href="index.php?page=besoin-aide">J'ai besoin d'aide</a></li>
-                <li><a href="">Intéragir avec nous<img src="public\images\menu-deroulant.svg" alt="voir plus"></a></li>
+                <li>Intéragir avec nous<img src="public\images\menu-deroulant.svg" alt="voir plus"></li>
                 <li><a href="index.php?page=faq">Foire aux questions</a></li>
                 <li><a href="index.php?page=qui-sommes-nous">Qui sommes nous</a></li>
             </ul>

@@ -1,23 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const inputs = document.querySelectorAll(".input-form");
+    const fieldsets = document.querySelectorAll("fieldset");
 
-    inputs.forEach(input => {
-        if (input.checked) {
-            input.nextElementSibling.style.backgroundColor = "var(--bleu)";
-            input.nextElementSibling.style.color = "white";
-        }
+    fieldsets.forEach(fieldset => {
+        const inputs = fieldset.querySelectorAll(".input-form");
 
-        input.addEventListener("change", function () {
-            // Vérifie si l'input est sélectionné
-            if (this.checked) {
-                this.nextElementSibling.style.backgroundColor = "var(--bleu)";
-                this.nextElementSibling.style.color = "white";
+        inputs.forEach(input => {
+            const container = input.parentElement; // Sélectionne le container-input
+
+            // Vérifie au chargement si l'input est checked
+            if (input.checked) {
+                container.style.backgroundColor = "var(--bleu)";
+                container.style.color = "white";
             }
 
-            if (!(this.checked)) {
-                this.nextElementSibling.style.backgroundColor = "none";
-                this.nextElementSibling.style.color = "black";
-            }
+            input.addEventListener("change", function () {
+                // Réinitialise tous les containers du même fieldset
+                fieldset.querySelectorAll(".container-input").forEach(container => {
+                    container.style.backgroundColor = ""; // Remet le CSS par défaut
+                    container.style.color = ""; // Remet la couleur par défaut
+                });
+
+                // Applique la couleur seulement au container sélectionné
+                container.style.backgroundColor = "var(--bleu)";
+                container.style.color = "white";
+            });
         });
     });
 });
