@@ -39,7 +39,21 @@
         <nav>
             <ul>
                 <li><a href="index.php?page=besoin-aide">J'ai besoin d'aide</a></li>
-                <li>Intéragir avec nous<img src="public\images\menu-deroulant.svg" alt="voir plus"></li>
+                <div id="menu-deroulant">
+                    <li id="interagir">Intéragir avec nous<img src="public\images\menu-deroulant.svg" alt="voir plus"></li>
+                    <div class="hidden" id="hidden">
+                        <li>
+                            <a href="index.php?page=blog">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">- Blog et témoignages</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.php?page=forum">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">- Forum</label>
+                            </a>
+                        </li>
+                    </div>
+                </div>
                 <li><a href="index.php?page=faq">Foire aux questions</a></li>
                 <li><a href="index.php?page=qui-sommes-nous">Qui sommes nous</a></li>
             </ul>
@@ -80,9 +94,6 @@
                     <li><a href="index.php?page=forum">
                             <label for="menuCheckbox" onclick="this.parentNode.click();">- Forum</label>
                         </a></li>
-                    <!-- <li><a href="index.php?page=faq">
-                            <label for="menuCheckbox" onclick="this.parentNode.click();">- Nous contacter</label>
-                        </a></li> -->
                 </div>
                 <li><a href="index.php?page=faq">
                         <label for="menuCheckbox" onclick="this.parentNode.click();">Foire Aux Questions</label>

@@ -5,10 +5,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const sousMenu = document.getElementById("sous-li");
   const fleche = document.getElementById("fleche-menu-interagir");
 
+  // DESKTOP
+  const menuDesktop = document.getElementById("hidden");
+  const interagir = document.getElementById("interagir")
+
   // Fonction pour fermer le menu
   function closeMenu() {
     menuToggle.classList.remove("active");
     navMenu.classList.remove("active"); // On enlève aussi la classe active pour la transition
+  }
+
+  function closeMenuDesktop() {
+    menuDesktop.classList.remove("visible");
+    menuDesktop.classList.add("hidden");
+  }
+
+  function openMenuDesktop() {
+    menuDesktop.classList.add("visible");
+    menuDesktop.classList.remove("hidden");
   }
 
   // Fonction pour ouvrir le menu
@@ -24,6 +38,17 @@ document.addEventListener("DOMContentLoaded", function () {
       closeMenu();
     } else {
       openMenu();
+    }
+  });
+
+  // Toggle du menu principal
+  interagir.addEventListener("click", function (event) {
+    console.log("clicl");
+    event.stopPropagation();
+    if (menuDesktop.classList.contains("visible")) {
+      closeMenuDesktop();
+    } else {
+      openMenuDesktop();
     }
   });
 
@@ -46,6 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Fermer le menu en cliquant à l'extérieur
   document.addEventListener("click", function (event) {
     if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+      closeMenu();
+    }
+    if (!menuDesktop.contains(event.target) && !menuDesktop.contains(event.target)) {
       closeMenu();
     }
   });

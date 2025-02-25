@@ -318,6 +318,56 @@ h4 {
         z-index: 10;
     }
 
+    #interagir {
+        cursor: pointer;
+    }
+
+    .visible {
+        display: flex;
+        opacity: 1;
+        transform: scale(1);
+        transition: transform 0.3s ease-in;
+    }
+
+    .hidden {
+        display: none;
+        opacity: 0;
+        transition: all 0.3s ease-in;
+        transform: scale(0.5);
+    }
+
+    #hidden {
+        margin-top: 10px;
+        position: absolute;
+        flex-direction: column;
+        background: white;
+        padding: 10px;
+        border: 1px solid var(--bleu);
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.20) inset;
+    }
+
+    #hidden li {
+        cursor: pointer;
+        list-style-type: none;
+        padding: 10px 0;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    nav a {
+        color: black;
+        transition: 0.3s all ease;
+    }
+
+    nav a:hover {
+        color: var(--bleu);
+        transition: 0.3s all ease;
+    }
 
     #sante-mentale {
         width: 50%;
@@ -345,6 +395,8 @@ h4 {
     }
 
     #button-container {
+        display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
     }
 
@@ -359,7 +411,7 @@ h4 {
         border: 0.5px solid var(--jaune);
     }
 
-    #button-container button:nth-child(2) {
+    #button-container form:last-child button {
         background-color: var(--bleu);
         border: 0.5px solid var(--bleu);
     }
@@ -387,12 +439,11 @@ h4 {
 
     #cartes-container {
         scrollbar-width: thin;
-        /* Pour les navigateurs modernes, réduit la largeur de la scrollbar */
-        scrollbar-color: #888 #f1f1f1;
-        /* Couleurs personnalisées de la scrollbar */
+        scrollbar-color: var(--bleu) #f1f1f1;
     }
 
     .carte {
+        justify-content: center;
         box-sizing: border-box;
     }
 
@@ -487,7 +538,13 @@ h4 {
     }
 
     #message-jaune {
+        margin-left: 50px;
         font-weight: bold;
+    }
+
+    #message-jaune a {
+        position: absolute;
+        color: black;
     }
 
     /* TEMOIGNAGES */
