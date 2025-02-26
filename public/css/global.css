@@ -41,6 +41,20 @@ body {
     padding: 0;
 }
 
+h1 {
+    color: var(--bleu-fonce);
+    font-family: var(--font-title);
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    padding: 60px 30px 40px 30px;
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--font-main);
+}
+
 #slogan {
     font-family: var(--font-title);
     font-weight: 400;
@@ -527,23 +541,7 @@ footer a {
         width: 252px;
     }
 
-    p {
-        font-size: 16px;
-        font-family: var(--font-main);
-    }
-
-
     header nav {
         z-index: 10;
-    }
-
-    h1 {
-        color: var(--bleu-fonce);
-        font-family: var(--font-title);
-        font-family: var(--font-title);
-        font-size: 40px;
-        font-weight: 300;
-        text-align: center;
-        padding: 60px 30px 40px 30px;
     }
 }
