@@ -29,9 +29,11 @@
             <div id="container-slogan">
                 <p id="slogan">L'espoir d'un nouveau départ</p>
             </div>
-            <div id="container-login">
-                <img id="login-icon" src="public\images\login-icon.svg" alt="icon connexion">
-            </div>
+            <a href="index.php?page=connexion">
+                <div id="container-login">
+                    <img id="login-icon" src="public\images\login-icon.svg" alt="icon connexion">
+                </div>
+            </a>
         </div>
         <nav>
             <ul>

@@ -56,7 +56,7 @@
             </fieldset>
         <?php endforeach ?>
 
-        <button type="submit" class="button">
+        <button class="button">
             Voir le résultat
         </button>
     </form>

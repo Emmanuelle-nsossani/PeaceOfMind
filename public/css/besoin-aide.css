@@ -1,120 +1,249 @@
-    /* BESION AIDE  */
+/* BESION AIDE  */
 
-    #besoin-aide h1 {
-        background-position-y: 23px;
-        background-image: url(../images/nuage.svg);
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-size: 100px;
-    }
+#besoin-aide h1 {
+    background-position-y: 23px;
+    background-image: url(../images/nuage.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100px;
+}
 
-    #intro {
-        margin: 0 30px;
-    }
+#besoin-aide {
+    margin-bottom: 60px;
+}
 
-    #intro img {
-        float: right;
-    }
+#intro {
+    margin: 0 30px;
+}
 
-    #intro-p {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        text-align: justify;
-    }
+#intro img {
+    float: right;
+}
 
-    .titre-question {
-        margin-bottom: 20px;
-        background-color: var(--bleu);
-        color: black;
-        font-weight: bold;
-        font-size: 16px;
-        text-align: center;
-        border-radius: 20px;
-        padding: 10px;
-        font-family: var(--font-main);
-        width: 100%;
-    }
+#intro-p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
 
-    form {
-        margin-top: 60px;
-    }
+.titre-question {
+    margin-bottom: 20px;
+    background-color: var(--bleu);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: var(--font-main);
+    width: 100%;
+}
 
-    .question {
-        width: 100%;
-        margin-top: 30px;
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 50px;
-    }
+form {
+    margin-top: 60px;
+}
 
-    #pour-qui button {
-        text-align: center;
-        gap: 20px
-    }
+.question {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
 
-    .proposition {
-        gap: 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-    }
+#pour-qui button {
+    text-align: center;
+    gap: 20px
+}
 
-    .question-hidden {
-        display: none;
-    }
+.proposition {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.question-hidden {
+    display: none;
+}
 
 /* bloquer le defilement de la page quand map ouverte */
-    .no-scroll {
-        overflow: hidden;
-        height: 100vh;
-    }
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
 
-    /* .pour-moi-container {
-        flex-direction: column;
-    } */
+/* .pour-moi-container {
+    flex-direction: column;
+} */
 
-    /* MAP */
+/* MAP */
 
-    #map {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.4);
-        display: none;
-        justify-content: center;
-        align-items: flex-end;
-        z-index: 1000;
-    }
+#map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1000;
+}
+
+#map-container {
+    width: 100%;
+    height: 90%;
+    background: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+#close-map {
+    z-index: 10;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#close-map img {
+    width: 20px;
+}
+
+.overlay {
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; 
+    pointer-events: none; 
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    pointer-events: auto; 
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#header-overlay {
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--bleu);
+    padding: 10px 0;
+}
+
+#pp-psy {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-image: url(../images/psy.jpg);
+    background-size: cover;
+}
+
+#fonction {
+    background-image: url(../images/psy.svg);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+#pos {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+h4 {
+    font-family: var(--font-main);
+}
+
+.overlay-content button {
+    justify-content: center;
+    width: fit-content;
+    margin: 15px auto;
     
-    #map-container {
-        width: 100%;
-        height: 90%;
-        background: white;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-        overflow: hidden;
-        position: relative;
+}
+
+#overlay-close {
+    font-size: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* Classes pour l'animation */
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+@media (min-width: 481px) {
+    #besoin-aide {
+        margin: 0 7%;
+        margin-bottom: 200px;
     }
-    
+
+    #sous-titre {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #form-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    form,
+    #intro-p {
+        width: 47%;
+    }
+
     #close-map {
-        z-index: 10;
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 40px;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
+        bottom: unset;
+        top: 200px
+    }
+}
+
+/* @media (max-width: 480px) {
+    .overlay {
+        margin: 0 10px;
     }
 
-    #close-map img {
-        width: 20px;
+    .overlay-content {
+        width: 100%;
+        margin-top: 300px;
     }
+} */
