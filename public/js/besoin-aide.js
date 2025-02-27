@@ -49,5 +49,61 @@ document.addEventListener("DOMContentLoaded", function () {
     closeMap.addEventListener("click", function () {
         mapOverlay.style.display = "none";
         document.body.classList.remove("no-scroll"); // Rétablit le scroll
+        overlay.style.display = "none";
+
+    });
+
+    const markers = document.querySelectorAll("gmp-advanced-marker");
+
+    const overlay = document.getElementById("overlay-med");
+
+    // Référence au contenu de l'overlay
+    const overlayContent = overlay.querySelector(".overlay-content");
+
+    markers.forEach(marker => {
+        marker.addEventListener("click", () => {
+            const ville = marker.getAttribute("title");
+
+            // Vérifie si le marqueur contient un enfant avec une classe spécifique
+            let bgColor = "#fff"; // background par défaut
+            if (marker.querySelector(".marqueur-jaune")) {
+                // bgColor = "#FEDA7A";
+            } else if (marker.querySelector(".marqueur-bleu")) {
+                // bgColor = "#98D2F5";
+            }
+            overlayContent.style.backgroundColor = bgColor;
+
+            // Animation de transition sur le contenu
+            if (overlay.style.display === "flex") {
+                overlayContent.classList.add("fade-out");
+                overlayContent.offsetWidth; // force le recalcul du style
+
+                setTimeout(() => {
+                    document.getElementById("overlay-title").textContent = ville;
+                    overlayContent.classList.remove("fade-out");
+                    overlayContent.classList.add("fade-in");
+                    overlayContent.offsetWidth; // recalcul pour l'animation de fade-in
+
+                    setTimeout(() => {
+                        overlayContent.classList.remove("fade-in");
+                    }, 300);
+                }, 300);
+            } else {
+                // Première ouverture de l'overlay avec animation
+                document.getElementById("overlay-title").textContent = ville;
+                overlay.style.display = "flex";
+                overlayContent.classList.add("fade-in");
+                overlayContent.offsetWidth;
+
+                setTimeout(() => {
+                    overlayContent.classList.remove("fade-in");
+                }, 300);
+            }
+        });
+    })
+
+    // Fermeture de l'overlay
+    document.getElementById("overlay-close").addEventListener("click", () => {
+        overlay.style.display = "none";
     });
 });

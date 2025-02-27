@@ -30,7 +30,7 @@
             <img src="https://upload.wikimedia.org/wikipedia/fr/e/ec/LogoUSPN.png" alt="">
         </div>
         <div class="icon">
-            <img src="https://yt3.googleusercontent.com/ytc/AIdro_mFz97JKE0sbh38R3wbT4uOeNJ0OedjYEmrYzZKq1efRPE=s900-c-k-c0x00ffffff-no-rj"
+            <img src="https://upload.wikimedia.org/wikipedia/fr/7/7f/Logo-doctolib.svg"
                 alt="">
         </div>
         <div class="icon">
@@ -95,7 +95,7 @@
                     <img src="https://upload.wikimedia.org/wikipedia/fr/e/ec/LogoUSPN.png" alt="">
                 </div>
                 <div class="icon">
-                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_mFz97JKE0sbh38R3wbT4uOeNJ0OedjYEmrYzZKq1efRPE=s900-c-k-c0x00ffffff-no-rj"
+                    <img src="https://upload.wikimedia.org/wikipedia/fr/7/7f/Logo-doctolib.svg"
                         alt="">
                 </div>
                 <div class="icon">

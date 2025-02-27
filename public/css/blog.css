@@ -1,0 +1,232 @@
+#blog {
+    margin: 0 7%;
+}
+
+h1 {
+    color: var(--bleu-fonce);
+    font-family: var(--font-title);
+    font-family: var(--font-title);
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    padding: 60px 30px 40px 30px;
+}
+
+#blog h1 {
+    background-position-y: 23px;
+    background-image: url(../images/nuage.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100px;
+}
+
+/* articles */
+
+.article-container {
+    margin: 50px 0;
+    background-color: var(--rose);
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.305) inset;
+}
+
+.p-titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#last-article {
+    display: flex;
+    background-color: var(--bleu);
+    border-radius: 40px;
+    width: fit-content;
+    padding: 7px;
+    position: relative;
+    top: 12px;
+    left: 12px;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.305) inset;
+}
+
+.text-last-article {
+    height: 30vh;
+    overflow: hidden;
+    margin: 0 10%;
+    background-color: #000000;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.115));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.text-last-article p:nth-child(1) {
+    margin-bottom: 10px;
+    color: var(--bleu-fonce);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-last-article p {
+    text-align: justify;
+}
+
+.article-container button {
+    margin: auto;
+    width: fit-content;
+    top: 15px;
+    position: relative;
+}
+
+.button-article {
+    width: 100%;
+    display: flex;
+}
+
+.container-img-art {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-img-art img {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container-img-art p {
+    top: -25px;
+    position: relative;
+    left: 10px;
+    OPACITY: 0.3;
+}
+
+/* ARTICLE */
+
+#page-article {
+    margin: 0 30px;
+}
+
+#page-article h1 {
+    font-size: 30px;
+}
+
+#article-container p,
+#article-container li b {
+    text-align: justify;
+    font-family: var(--font-main);
+    font-size: 16px;
+}
+
+#article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#article-container a {
+    color: var(--bleu-fonce);
+}
+
+#article-thumb {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 15px 0;
+    font-family: var(--font-main);
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#page-article .button {
+    background-color: var(--bleu);
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#page-article form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#blog-header {
+    width: 100%;
+}
+
+#blog-header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-family: var(--font-main);
+}
+
+#blog-header li {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all-color 0.3s ease-in-out, all 0.3s ease-in-out;
+}
+
+#blog-header li.active {
+    background-color: #faafbd35;
+    height: 40px;
+    width: 40%;
+    border-bottom: 3px solid var(--jaune);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+#temoignage {
+    margin: 30px 0;
+}
+
+#auteur-temoignage {
+    font-weight: bold;
+    color: var(--bleu-fonce);
+}
+
+#titre-temoignage {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#articles {
+    display: none;
+}
+
+#temoignage {
+    display: none;
+}
+
+#temoignage.active-page {
+    display: block;
+}
+
+#articles.active-page {
+    display: block;
+}
+
+@media (min-width: 481px){
+    #articles.active-page {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .article-container {
+        width: 45%;
+    }
+}

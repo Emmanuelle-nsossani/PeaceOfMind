@@ -1,0 +1,115 @@
+#test {
+    margin: 0 30px;
+}
+
+#test h1 {
+    background-position-y: 23px;
+    background-image: url(../images/nuage.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100px;
+}
+
+#explication {
+    background-color: var(--rose);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.20) inset;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#rappel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid var(--bleu);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+b {
+    color: var(--jaune);
+}
+
+#consigne {
+margin-bottom: 30px;
+text-align: center;
+font-weight: 500;
+}
+
+#consigne ul {
+    list-style-type: none;
+    text-align: center;
+    font-family: var(--font-main);
+}
+
+
+legend {
+    background-color: var(--bleu);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.20) inset;
+    padding: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-family: var(--font-main);
+}
+
+fieldset {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+}
+
+fieldset input {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+} 
+
+fieldset label {
+    position: absolute;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.container-input {
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1E1E1;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    font-family: var(--font-main);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.20) inset;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+form .button {        
+    justify-content: center;
+    width: fit-content;
+}
+
+@media (min-width: 481px) {
+
+    #test {
+        margin: 0 7%;
+
+    }
+}

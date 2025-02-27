@@ -1,0 +1,70 @@
+/* FORUM */
+
+#forum {
+    margin: 0 30px;
+}
+
+#forum h1 {
+    background-position-y: 23px;
+    background-image: url(../images/nuage.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: 20px;
+}
+
+.identite-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.identite-container img {
+    width: 30px;
+}
+
+.identite {
+    font-weight: 500;
+    color: var(--bleu-fonce);
+}
+
+.heure {
+    color: #00000084;
+}
+
+.discussion {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#message {
+    margin: 30px 0;
+}
+
+#message input {
+    width: 100%;
+
+}
+
+input[type=text], select {
+    border: 1px solid var(--bleu-fonce);
+    padding: 12px;
+    border-radius: 15px;
+}
+
+@media (min-width: 481px) {
+    #forum {
+        margin: 0 7%;
+    }
+
+    .discussion {
+        width: 40%;
+        margin: auto;
+    }
+}
