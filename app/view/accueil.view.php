@@ -11,43 +11,49 @@
                 <p>Nous vous proposons un test conçu pour évaluer votre niveau de santé mentale, il vous aidera à mieux comprendre votre état émotionnel et psychologique. En un instant, obtenez un résultat chiffré et détaillé. Pour en savoir plus évaluez votre mental en 2min.</p>
                 <!-- button from Uiverse.io by Creatlydev -->
             </div>
-            <button class="button">
-                <span class="button__icon-wrapper">
-                    <svg
-                        viewBox="0 0 14 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="button__icon-svg"
-                        width="10">
-                        <path
-                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                            fill="currentColor"></path>
-                    </svg>
+            <form action="index.php?page=test" method="post">
+                <button class="button" type="submit">
+                    <span class="button__icon-wrapper">
+                        <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="button__icon-svg"
+                            width="10">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
 
-                    <svg
-                        viewBox="0 0 14 15"
-                        fill="none"
-                        width="10"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="button__icon-svg button__icon-svg--copy">
-                        <path
-                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                            fill="currentColor"></path>
-                    </svg>
-                </span>
-                Passer le test maintenant !
-            </button>
-
+                        <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            width="10"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="button__icon-svg button__icon-svg--copy">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </span>
+                    Passer le test maintenant !
+                </button>
+            </form>
         </div>
         <div id="button-container">
-            <button class="button">
-                <img src="public\images\souris.png" alt="souris">
-                <p>Je me renseigne</p>
-            </button>
-            <button class="button">
-                <img src="public\images\tel.png" alt="tel">
-                <p>Je veux en parler</p>
-            </button>
+            <form action="index.php?page=faq" method="post">
+                <button id="button-faq" class="button" type="submit">
+                    <img src="public\images\souris.png" alt="souris">
+                    <p>Je me renseigne</p>
+                </button>
+            </form>
+            <form action="index.php?page=forum" method="post">
+                <button id="button-forum" class="button" type="submit">
+                    <img src="public\images\tel.png" alt="tel">
+                    <p>Je veux en parler</p>
+                </button>
+            </form>
+
         </div>
     </section>
     <section id="saviez-vous">
@@ -161,7 +167,9 @@
                     La santé mentale désigne la santé psychologique d’une personne, soit son bien être. Ce n’est pas quelque chose de figé, plutôt une évolution perpétuelle de notre cerveau, en recherche d’un équilibre psychique, en fonction de nos expériences ...</p>
             </div>
             <div id="button-article">
-                <button class="button">Lire la suite</button>
+                <form action="index.php?page=article1" method="post">
+                    <button class="button">Lire la suite</button>
+                </form>
             </div>
         </div>
         <div class="article-container-desktop">
@@ -203,7 +211,9 @@
             </div>
             <div id="message-jaune">
                 <img src="public\images\message-jaune.svg" alt="bulle de message">
-                <p>Je découvre le Forum</p>
+                <a href="index.php?page=forum">
+                    <p>Je découvre le Forum</p>
+                </a>
             </div>
         </div>
     </section>
@@ -216,19 +226,19 @@
         </div>
         <div id="temoignages-container">
             <div class="bold">
-                < </div>
-                    <div id="temoignage-container">
-                        <div id="identite">
-                            <img src="public\images\malika.png" alt="Malika">
-                            <p>Malika</p>
-                        </div>
-                        <div id="text-temoignage">
-                            <p>Du burn out à bénévole chez POM</p>
-                            <p>Du burn-out à bénévole chez Peace of Mind Témoignage de Malika, étudiante en médecine qui n’avait plus espoir en la vie. J’ai sombré dans un cercle vicieux de stress, d’auto-dévalorisation et d’ <a href="">Lire Plus</a></p>
-                        </div>
-                    </div>
-                    <div class="bold">></div>
             </div>
+            <div id="temoignage-container">
+                <div id="identite">
+                    <img src="public\images\malika.png" alt="Malika">
+                    <p>Malika</p>
+                </div>
+                <div id="text-temoignage">
+                    <p>Du burn out à bénévole chez POM</p>
+                    <p>Du burn-out à bénévole chez Peace of Mind Témoignage de Malika, étudiante en médecine qui n’avait plus espoir en la vie. J’ai sombré dans un cercle vicieux de stress, d’auto-dévalorisation et d’ <a href="index.php?page=blog">Lire Plus</a></p>
+                </div>
+            </div>
+            <div class="bold"></div>
+        </div>
         </div>
         <img id="soutien-img" src="public\images\soutien-illus.svg" alt="soutien illus">
     </section>

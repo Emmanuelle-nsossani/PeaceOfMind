@@ -10,22 +10,21 @@ namespace app\controller;
  * @package app\controller
  */
 
-class BesoinAideController extends Controller
+class BlogController extends Controller
 {
     /**
      * Génère la page d'accueil.
      */
-    public function genererPageBesoinAide()
+    public function genererPageBlog()
     {
         // Données nécessaires à la génération de la page
         $data = [
-            'page_title' => "Besoin d'aide",
-            'css' => 'besoin-aide.css',
+            'page_title' => 'Blog',
+            'css' => 'blog.css',
             'fontAwesome' => true,
-            'scripts' => ['header.js','besoin-aide.js'],
-            'view' => 'app/view/besoin-aide.view.php',
+            'scripts' => ['blog.js','header.js'],
+            'view' => 'app/view/blog.view.php',
             'layout' => 'app/view/common/layout.php',
-            'apiKey' => getenv('GOOGLE_API_KEY'),
         ];
 
         $this->genererPage($data);
