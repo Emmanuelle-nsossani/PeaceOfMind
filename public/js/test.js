@@ -26,4 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
+    const resultButton = document.querySelector("button.button");
+    resultButton.addEventListener("click", function (event) {
+        event.preventDefault(); // Empêche la soumission du formulaire
+        alert("Vous êtes en dépression :)");
+    });
+
 });
